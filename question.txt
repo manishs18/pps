@@ -1,0 +1,296 @@
+Python Basic Exercise for Beginners
+Topics: Variables, Operators, Loops, String, Numbers, List
+
+Exercise 1: Calculate the multiplication and sum of two numbers
+Exercise 2: Print the Sum of a Current Number and a Previous number
+Exercise 3: Print characters present at an even index number
+Exercise 4: Remove first n characters from a string
+Exercise 5: Check if the first and last numbers of a list are the same
+Exercise 6: Display numbers divisible by 5
+Exercise 7: Find the number of occurrences of a substring in a string
+Exercise 8: Print the following pattern
+Exercise 9: Check Palindrome Number
+Exercise 10: Merge two lists using the following condition
+Exercise 11: Get each digit from a number in the reverse order.
+Exercise 12: Calculate income tax
+Exercise 13: Print multiplication table from 1 to 10
+Exercise 14: Print a downward half-pyramid pattern of stars
+Exercise 15: Get an int value of base raises to the power of exponent
+
+
+
+
+Python Input and Output Exercise
+Topics: print() and input(), File I/O
+
+Exercise 1: Accept numbers from a user
+Exercise 2: Display three string “Name”, “Is”, “James” as “Name**Is**James”
+Exercise 3: Convert Decimal number to octal using print() output formatting
+Exercise 4: Display float number with 2 decimal places using print()
+Exercise 5: Accept a list of 5 float numbers as an input from the user
+Exercise 6: Write all content of a given file into a new file by skipping line number 5
+Exercise 7: Accept any three string from one input() call
+Exercise 8: Format variables using a string.format() method.
+Exercise 9: Check file is empty or not
+Exercise 10: Read line number 4 from the following file
+
+
+
+
+Python Loop Exercise
+Topics: If-else statements, loop, and while loop.
+
+Exercise 1: Print first 10 natural numbers using while loop
+Exercise 2: Print the following pattern
+Exercise 3: Calculate sum of all numbers from 1 to a given number
+Exercise 4: Print multiplication table of a given number
+Exercise 5: Display numbers from a list using a loop
+Exercise 6: Count the total number of digits in a number
+Exercise 7: Print the following pattern
+Exercise 8: Print list in reverse order using a loop
+Exercise 9: Display numbers from -10 to -1 using for loop
+Exercise 10: Display a message “Done” after the successful execution of the for loop
+Exercise 11: Print all prime numbers within a range
+Exercise 12: Display Fibonacci series up to 10 terms
+Exercise 13: Find the factorial of a given number
+Exercise 14: Reverse a integer number
+Exercise 15: Print elements from a given list present at odd index positions
+Exercise 16: Calculate the cube of all numbers from 1 to a given number
+Exercise 17: Find the sum of the series up to n terms
+Exercise 18: Print the following pattern
+
+
+
+Python Functions Exercise
+Topics: Functions arguments, built-in functions.
+
+Exercise 1: Create a function in Python
+Exercise 2: Create a function with variable length of arguments
+Exercise 3: Return multiple values from a function
+Exercise 4: Create a function with a default argument
+Exercise 5: Create an inner function to calculate the addition in the following way
+Exercise 6: Create a recursive function
+Exercise 7: Assign a different name to function and call it through the new name
+Exercise 8: Generate a Python list of all the even numbers between 4 to 30
+Exercise 9: Find the largest item from a given list
+
+
+
+Python String Exercise
+Exercise 1A: Create a string made of the first, middle and last character
+Exercise 1B: Create a string made of the middle three characters
+Exercise 2: Append new string in the middle of a given string
+Exercise 3: Create a new string made of the first, middle, and last characters of each input string
+Exercise 4: Arrange string characters such that lowercase letters should come first
+Exercise 5: Count all letters, digits, and special symbols from a given string
+Exercise 6: Create a mixed String using the following rules
+Exercise 7: String characters balance Test
+Exercise 8: Find all occurrences of a substring in a given string by ignoring the case
+Exercise 9: Calculate the sum and average of the digits present in a string
+Exercise 10: Write a program to count occurrences of all characters within a string
+Exercise 11: Reverse a given string
+Exercise 12: Find the last position of a given substring
+Exercise 13: Split a string on hyphens
+Exercise 14: Remove empty strings from a list of strings
+Exercise 15: Remove special symbols / punctuation from a string
+Exercise 16: Removal all characters from a string except integers
+Exercise 17: Find words with both alphabets and numbers
+Exercise 18: Replace each special symbol with # in the following string
+
+
+
+Python Data Structure Exercise
+
+
+Exercise 1: Create a list by picking an odd-index items from the first list and even index items from the second
+Exercise 2: Remove and add item in a list
+Exercise 3: Slice list into 3 equal chunks and reverse each chunk
+Exercise 4: Count the occurrence of each element from a list
+Exercise 5: Create a Python set such that it shows the element from both lists in a pair
+Exercise 6: Find the intersection (common) of two sets and remove those elements from the first set
+Exercise 7: Checks if one set is a subset or superset of another set. If found, delete all elements from that set
+Exercise 8: Iterate a given list and check if a given element exists as a key’s value in a dictionary. If not, delete it from the list
+Exercise 9: Get all values from the dictionary and add them to a list but don’t add duplicates
+Exercise 10: Remove duplicates from a list and create a tuple and find the minimum and maximum number
+
+
+
+Python List Exercise
+
+
+Exercise 1: Reverse a list in Python
+Exercise 2: Concatenate two lists index-wise
+Exercise 3: Turn every item of a list into its square
+Exercise 4: Concatenate two lists in the following order
+Exercise 5: Iterate both lists simultaneously
+Exercise 6: Remove empty strings from the list of strings
+Exercise 7: Add new item to list after a specified item
+Exercise 8: Extend nested list by adding the sublist
+Exercise 9: Replace list’s item with new value if found
+Exercise 10: Remove all occurrences of a specific item from a list.
+
+
+
+Python Dictionary Exercise
+Exercise 1: Convert two lists into a dictionary
+Exercise 2: Merge two Python dictionaries into one
+Exercise 3: Print the value of key ‘history’ from the below dict
+Exercise 4: Initialize dictionary with default values
+Exercise 5: Create a dictionary by extracting the keys from a given dictionary
+Exercise 6: Delete a list of keys from a dictionary
+Exercise 7: Check if a value exists in a dictionary
+Exercise 8: Rename key of a dictionary
+Exercise 9: Get the key of a minimum value from the following dictionary
+Exercise 10: Change value of a key in a nested dictionary
+
+
+Python Set Exercise
+Exercise 1: Add a list of elements to a set
+Exercise 2: Return a new set of identical items from two sets
+Exercise 3: Get Only unique items from two sets
+Exercise 4: Update the first set with items that don’t exist in the second set
+Exercise 5: Remove items from the set at once
+Exercise 6: Return a set of elements present in Set A or B, but not both
+Exercise 7: Check if two sets have any elements in common. If yes, display the common elements
+Exercise 8: Update set1 by adding items from set2, except common items
+Exercise 9: Remove items from set1 that are not common to both set1 and set2
+
+
+Python Tuple Exercise
+Exercise 1: Reverse the tuple
+Exercise 2: Access value 20 from the tuple
+Exercise 3: Create a tuple with single item 50
+Exercise 4: Unpack the tuple into 4 variables
+Exercise 5: Swap two tuples in Python
+Exercise 6: Copy specific elements from one tuple to a new tuple
+Exercise 7: Modify the tuple
+Exercise 8: Sort a tuple of tuples by 2nd item
+Exercise 9: Counts the number of occurrences of item 50 from a tuple
+Exercise 10: Check if all items in the tuple are the same
+
+
+Python Date and Time Exercise
+Exercise 1: Print current date and time in Python
+Exercise 2: Convert string into a datetime object
+Exercise 3: Subtract a week (7 days)  from a given date in Python
+Exercise 4: Print a date in a the following format
+Exercise 5: Find the day of the week of a given date
+Exercise 6: Add a week (7 days) and 12 hours to a given date
+Exercise 7: Print current time in milliseconds
+Exercise 8: Convert the following datetime into a string
+Exercise 9: Calculate the date 4 months from the current date
+Exercise 10: Calculate number of days between two given dates
+
+
+Python OOP Exercise
+OOP Exercise 1: Create a Class with instance attributes
+OOP Exercise 2: Create a Vehicle class without any variables and methods
+OOP Exercise 3: Create a child class Bus that will inherit all of the variables and methods of the Vehicle class
+OOP Exercise 4: Class Inheritance
+OOP Exercise 5: Define a property that must have the same value for every class instance (object)
+OOP Exercise 6: Class Inheritance
+OOP Exercise 7: Check type of an object
+OOP Exercise 8: Determine if School_bus is also an instance of the Vehicle class
+
+
+Python JSON Exercise
+Practice and Learn JSON creation, manipulation, Encoding, Decoding, and parsing using Python
+
+Exercise 1: Convert the following dictionary into JSON format
+Exercise 2: Access the value of key2 from the following JSON
+Exercise 3: PrettyPrint following JSON data
+Exercise 4: Sort JSON keys in and write them into a file
+Exercise 5: Access the nested key ‘salary’ from the following JSON
+Exercise 6: Convert the following Vehicle Object into JSON
+Exercise 7: Convert the following JSON into Vehicle Object
+Exercise 8: Check whether following json is valid or invalid. If Invalid correct it
+Exercise 9: Parse the following JSON to get all the values of a key ‘name’ within an array
+
+
+Python NumPy Exercise
+Practice NumPy questions such as Array manipulations, numeric ranges, Slicing, indexing, Searching, Sorting, and splitting, and more.
+
+Exercise 1: Create a 4X2 integer array and Prints its attributes
+Exercise 2: Create a 5X2 integer array from a range between 100 to 200 such that the difference between each element is 10
+Exercise 3: Following is the provided numPy array. Return array of items by taking the third column from all rows
+Exercise 4: Return array of odd rows and even columns from below numpy array
+Exercise 5: Create a result array by adding the following two NumPy arrays. Next, modify the result array by calculating the square of each element
+Exercise 6: Split the array into four equal-sized sub-arrays
+Exercise 7: Sort following NumPy array
+Exercise 8: Print max from axis 0 and min from axis 1 from the following 2-D array.
+Exercise 9: Delete the second column from a given array and insert the following new column in its place.
+Exercise 10: Create two 2-D arrays and Plot them using matplotlib
+
+Python Pandas Exercise
+Practice Data Analysis using Python Pandas. Practice Data-frame, Data selection, group-by, Series, sorting, searching, and statistics.
+
+Exercise 1: From the given dataset print the first and last five rows
+Exercise 2: Clean the dataset and update the CSV file
+Exercise 3: Find the most expensive car company name
+Exercise 4: Print All Toyota Cars details
+Exercise 5: Count total cars per company
+Exercise 6: Find each company’s Higesht price car
+Exercise 7: Find the average mileage of each car making company
+Exercise 8: Sort all cars by Price column
+Exercise 9: Concatenate two data frames using the following conditions
+Exercise 10: Merge two data frames using the following condition
+
+
+Python Matplotlib Exercise
+Practice Data visualization using Python Matplotlib. Line plot, Style properties, multi-line plot, scatter plot, bar chart, histogram, Pie chart, Subplot, stack plot.
+
+Exercise 1: Read Total profit of all months and show it using a line plot
+Exercise 2: Get total profit of all months and show line plot with the following Style properties
+Exercise 3: Read all product sales data and show it  using a multiline plot
+Exercise 4: Read toothpaste sales data of each month and show it using a scatter plot
+Exercise 5: Read face cream and facewash product sales data and show it using the bar chart
+Exercise 6: Read sales data of bathing soap of all months and show it using a bar chart. Save this plot to your hard disk
+Exercise 7: Read the total profit of each month and show it using the histogram to see the most common profit ranges
+Exercise 8: Calculate total sale data for last year for each product and show it using a Pie chart
+Exercise 9: Read Bathing soap facewash of all months and display it using the Subplot
+Exercise Question 10: Read all product sales data and show it using the stack plot
+
+
+
+Random Data Generation Exercise
+Practice and Learn the various techniques to generate random data in Python.
+
+Topics: random module, secrets module, UUID module
+
+Exercise 1: Generate 3 random integers between 100 and 999 which is divisible by 5
+Exercise 2: Random Lottery Pick. Generate 100 random lottery tickets and pick two lucky tickets from it as a winner.
+Exercise 3: Generate 6 digit random secure OTP
+Exercise 4: Pick a random character from a given String
+Exercise 5: Generate random String of length 5
+Exercise 6: Generate a random Password which meets the following conditions
+Exercise 7: Calculate multiplication of two random float numbers
+Exercise 8: Generate random secure token of 64 bytes and random URL
+Exercise 9: Roll dice in such a way that every time you get the same number
+Exercise 10: Generate a random date between given start and end dates
+
+
+
+Python Database Exercise
+Practice Python database programming skills by solving the questions step by step.
+
+Use any of the MySQL, PostgreSQL, SQLite to solve the exercise
+
+Exercise 1: Connect to your database server and print its version
+Question 2: Fetch Hospital and Doctor Information using hospital Id and doctor Id
+Exercise 3: Get the list Of doctors as per the given specialty and salary
+Exercise 4: Get a list of doctors from a given hospital
+Operation 5: Update doctor experience in years
+
+
+Exercises for Intermediate developers
+Exercise 1: Reverse each word of a string
+Exercise 2: Read text file into a variable and replace all newlines with space
+Exercise 3: Remove items from a list while iterating
+Exercise 4: Reverse Dictionary mapping
+Exercise 5: Display all duplicate items from a list
+Exercise 6: Filter dictionary to contain keys present in the given list
+Exercise 7: Print the following number pattern
+Exercise 8: Create an inner function
+Exercise 9: Modify the element of a nested list inside the following list
+Exercise 10: Access the nested key increment from the following dictionary
+
