@@ -1,0 +1,294 @@
+Introduction to linux:-
+------------------------
+  -> It is the interface between the user and electric device.
+  -> os is the interface between hardware and software. 
+     
+     Operating System can manage, 
+        -> system resource 
+        -> memory mgmt 
+        -> device mgmt 
+        -> file system mgmt 
+        -> security mgmt 
+        -> network mgmt     
+        -> refer from control panel list for more 
+     
+     some of the os:-
+     ----------------------
+     laptop --> linux , windows, mac,
+     pc -> linux,windows,mac 
+     smart watch -> andriod 
+     mobile ->andriod , ios,..
+
+Definition.
+An operating system (OS) is a software program that manages a 
+computer's hardware and software, and provides a 
+platform for other programs to run
+
+========================================================================
+GUI based: Graphical user Interface. 
+           It will be slow, compared to CLI
+
+CLI based:Command line interface, 
+          By using command line we can interact with os. 
+
+
+some of the os --> 
+------------------ 
+windows --> GUI 
+linux --> CLI  + (some of its modern distribution give GUI option)
+
+=================================================================
+uses:-
+------- 
+  windows --> any one can use, easy to use. 
+              working professional (hr), students,....etc 
+  
+  linux   -->since linux is open source any one can learn. 
+             -> technical people -> working people, students          
+
+=====================================================================
+
+windows OS:-
+----------- 
+    ->It is a GUI based operating system 
+
+    users:-
+    ------- 
+       any one can use it, 
+          students, managers,hr,....
+
+linux OS:-
+----------
+    -> It is CLI based OS,but ( It has both CLI + GUI) options 
+
+    users:-
+    ------- 
+       developers, tester, deployment engineers, students for learning purpose.
+=============================================================
+unix, linux, ubuntu.
+
+unix:-
+------- 
+ -> In 1960, it has founded in AT & T lab. 
+ -> It is not a open source (It is paid software). 
+     Only companies can use the software to manage their server.
+ -> unix was popular for so many reason, 
+                --> high performance. 
+                --> high secure. 
+                --> It does not have any virus 
+
+Linux:-
+--------
+    -> Linux Torvald is the founder of linux and git. 
+
+    ->Linux is same as unix, but it is open source.
+    ->Linux is custamizable. (Any one can modify ). 
+    -> Any user can make customize os from linux called as 
+        linux distribution.
+
+       some of the linux distribution,
+                 1. fedora linux 
+                 2. red had linux 
+                 3. ubuntu linux 
+                 4. kali linux 
+=================================================================
+difference between   unix   and  linux 
+
+unix                   vs         linux 
+------------------               --------------------------
+1. paid                           1.free
+2. not customizable               2.customizable 
+3. It is mainly used              3. Any one can use it
+servers,workstation, 
+infrastructure management.
+
+4.It is CLI based                  4. It is CLI + GUI based. 
+5.less variants                    5.It has more variants 
+                                               redhat linux 
+                                               kali linux 
+                                               ubuntu............etc
+
+===================================================================
+ubuntu:-
+-------- 
+   -> It is one of the linux distribution.
+
+===================================================================
+
+explain unix, linux, ubutu....?
+======================================================================
+linux commands:-
+----------------- 
+~ -> indicates the home directory
+$ -> normal user 
+# -> admin user
+
+
+==================================================================
+task
+
+1.History of Linux.
+2.Architecture of Linux.
+3.Explain linux file structure.
+
+=====================================
+
+basic linux command:-
+---------------------- 
+1. pwd  
+
+2. ls  
+     different options. 
+     -------------------- 
+
+     ls -a (including hidden files)
+     ls -l (long listing format)
+     ls -t (sort by last modified file)
+     ls -s (sort by file size)
+
+    file permission
+    ------------------ 
+    d         r     w      x 
+    |         |     |      |
+  directory  read  write  execute  
+
+     d rwx rwx rwx   Desktop
+     - rwx rwx rwx   demo.txt   
+
+   
+   absolute path:-
+   ---------------- 
+      It start with /  
+         cd  /home/rps/Deskop 
+    
+    relative path:-
+    -----------------  
+          cd desktop     
+
+3. mkdir:-
+-----------       
+     It is used create the directory 
+       mkdir hollywood                -----> relative path.
+       mkdir /home/rps/Videos/bollywood   ---> absolute path.
+
+4.rmdir:-
+--------- 
+    It is used to remove the directory.
+     
+     rmdir hollywood 
+
+5. touch:-
+----------- 
+      It is used to create the file. 
+
+      eg:-
+      ---- 
+          touch filename       -------------> It creates single file
+
+          touch filename1 filename2 filename3  --> It creates multiple file.
+
+6.cat:-
+-------- 
+    --> It is used to view the file content. 
+
+       cat  filename  ---> It is used to view the file content 
+
+       create a file:-
+       --------------- 
+          cat > file1.txt 
+          hi all 
+          welcome all  
+            (press ctrl + d) --> for exit. 
+
+7.who:-
+------- 
+   current logged in user with date  
+
+8.whoami:-
+-------------
+    display the system username
+
+9.date:-
+----------- 
+   displays the current date and time 
+
+
+10. cal :-
+---------- 
+     sudo apt install ncal  
+
+     cal  --> display current month calender
+     cal 2024 
+     cal 7 2024 
+
+
+
+11. copy:-  cp
+------------ 
+     It is used to copy the file or folder to the destination. 
+
+     cp source destination.
+
+12. move:-   mv
+-------------
+  It is used to move the file to the destination 
+
+  mv /home/rps/Videos/three.txt  /home/rps/Music/three.txt
+  mv /home/rps/Videos/three.txt  /home/rps/Music/4.txt  ( file is renamed)
+
+13.head:-
+---------- 
+      It is used to read first 10 lines of the file 
+         head filename.txt 
+
+         head -n filename.txt 
+           n is the number of lines.
+
+14. tail:-
+---------- 
+     It is used to read last 10 lines of the file. 
+          tail filename.txt    
+
+          tail -n filename.txt 
+            n is the number of lines       
+
+15.tac:-
+--------- 
+      -> It is the opposite of the cat command.
+      -> It reads the file content in reverse order.
+
+16.sort:-
+--------- 
+      It is used to sort the file data. 
+
+      sort filename.txt   (sort in ascending order)
+      sort -u filename.txt (sort and remove duplicate).
+
+
+
+
+
+
+
+
+Break
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+unix , linux, ubuntu..

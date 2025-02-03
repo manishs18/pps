@@ -1,0 +1,15 @@
+Define selenium-  selenium is a framework library it uses writing the script to automate testing. and selenium have huge such as pre-builtin method
+webdriver, locator:- ID, NAME, CLASS, XPATH, LINK-TEXT, CSS, Href
+
+webdriver:- webdriver is act like interface it uses to communicate b/w web browser.
+locator:- it is builtin method which supports like ID, NAME, CLASS, XPATH, LINK-TEXT, CSS, Href by help UI which is user interface and that
+ is fronted structued  which is written in tagging.
+
+ID = "id"
+NAME = "name"
+XPATH = "xpath"
+LINK_TEXT = "link text"
+PARTIAL_LINK_TEXT = "partial link text"
+TAG_NAME = "tag name"
+CLASS_NAME = "class name"
+CSS_SELECTOR = "css selector"

@@ -1,0 +1,31 @@
+;Default startup program for TRACE32
+;
+;This startup program can be modified according to your needs.
+
+;choose hex mode for input
+ radix hex
+
+;Add some extra buttons to the toolbar
+
+ menu.rp
+ (
+  add
+  toolbar
+  (
+   separator
+   toolitem "Target Settings" ":config" "system"
+  )
+ )
+
+;Select CPU type
+ system.cpu arm720t
+
+;Recall and Define History File
+ autostore , history
+
+ HELP.FILTER.RESet
+ HELP.FILTER.ADD    demo
+ HELP.FILTER ON
+
+ enddo
+

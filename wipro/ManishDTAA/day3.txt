@@ -1,0 +1,388 @@
+what is agile..?
+list some of the agile framework..?
+what is scrum and explain its roles..?
+explain scrum artifate..?
+explain scrum ceremonies..?
+
+Kanban:-
+-----------
+a visual system that helps teams manage and 
+track work as it moves through a process.
+
+founded in toyota orginization --> in the year 1940
+
+Kanban is a popular framework used to implement Agile 
+and DevOps software development. 
+
+It requires real-time communication of capacity and 
+full transparency of work. Work items are represented visually
+ on a kanban board, allowing team members to see the state 
+ of every piece of work at any time.
+
+keypoints about kanban.
+1. visual represenation 
+2. limit the work in progress. 
+3. increment the work.
+==============================================================
+   scrum          vs             kanban 
+  ---------------          -------------- 
+1.roles                        1. no specific role is required
+    product owner                     development team
+    scrum master                    
+    development team
+
+2. task are assigned           2. task are shared
+   by owner
+
+3. sprint                      3. no sprint 
+4. chages can be made          4. changes be made any time
+   at the end of the 
+   sprint 
+==================================================================
+lean:-
+ 
+Reducing waste in software development (Muda, Mura, Muri).
+
+Muda
+Means wastefulness or activities that don't add value to the customer. 
+Muda can increase costs, extend lead times, and decrease quality.
+
+Mura
+Means unevenness or irregularities in production processes.
+Mura can lead to inefficiencies and quality issues. 
+For example, a project might have a low workload at the beginning 
+but a high workload at the end. 
+
+Muri
+Means overburdening people, machines, or processes. 
+can lead to a decline in quality, increased error rates, 
+and a higher risk of breakdowns
+========================================================= 
+
+
+
+Conducting effective Daily Stand up meeting:-
+----------------------------------------------
+
+objective:-
+----------- 
+       team member should give update about the project status.
+
+who is involved in the daily stand up meeting:-
+---------------------------------------------- 
+    -scrum master 
+    -developement team 
+    -product onwer (some times, when in need)
+
+duration of the meeting:-
+---------------------- 
+    20 to 25 mts. /
+    15 to 20 mts
+
+preparation of the meeting:-
+------------------------------ 
+     after sprint planning metting, the standup meeting will happen 
+     daily through out the sprint.  
+
+   1.set the regular time and place for the metting. 
+       eg:-
+       ---- 
+           9 am ,  daily for 20 days. 
+   
+   2.define the purpose of the meeting. 
+           -> to give the update about current status.
+
+   3. send the invite to all the team member. 
+
+
+
+
+
+
+
+conducting the meeting:- [on the day of meeting]
+-------------------------------------------------
+1. start the metting on time. 
+2. every team member should give update, 
+     eg:-
+     ---- 
+         common script have to use, while giving update. 
+
+         what you have done yestarday..? (yestarday task)
+         what you will do it today..? (plan for new task)
+         Is anything blockers..?
+
+        Ramesh:  update
+        --------------- 
+          yestarday i have worked on cart functionality,
+          today i will work on checkout function 
+          I dont have any blocker. 
+
+        suresh: update
+        -------------- 
+            yestarday i have worked on payment gateway.  
+            today i will work on upi paymeny 
+            iam not able receive the payment, having issue in api.
+
+        if any member is having issue, he has to wait in the parking lot.
+
+3. co-ordinate and colloborate with the team member to resolve the issue.
+4. keep focused and encourage each other. 
+=======================================================================
+
+Sample script:-
+----------------- 
+
+metting starts at 9 AM
+
+Scrum master:
+(coach/mentor/facilitator)
+------------------------------ 
+      ->Good Morning team, lets starts the daily stand up meeting,
+      ->keep the update short and clear, 
+      ->And plan for the today's task, 
+      ->for any blocker let us know here, 
+      -> lets start the update with ramesh,
+
+ramesh:  yestarday i have worked on eamil authentication, 
+         today i will work on mobile number authentication
+         i  dont have any blocker 
+
+suresh : yestarday worked on Register and login, 
+         today i will work on social media login
+         i dont have any blocker 
+
+ankit : yestarday worked on product product management 
+        today working on catalog for the product 
+        iam unable to update the product.
+
+Scrum master: Thank you all for the update,for any issue are challenge 
+             please wait in the meeting for clearity. 
+              
+Meeting End: 9.15 AM
+               
+===============================================================
+Sprint Review metting:-
+------------------------- 
+   -> Spring Review is the crucial part in the agile developement, 
+      because scrum team demonstrate the work and get the feedback 
+      on the increcemental work which is done during this sprint.
+          
+          a. showcase the completed work. 
+          b. Get the feedback. 
+          c. Transprancy and collobaration. (open communication)
+          d. identification of changes and improvements.
+
+   a.showcase the completed work:
+   ------------------------------- 
+        the developement team shows the work completed in this sprint
+        to stackholder,product onwer. 
+
+        The demonstration helps to understand the project functionality.
+   
+   b.Get the feedback: 
+   ---------------------- 
+       the stackholder can give the feedback, about functionality 
+       weather it has meet the requiremnt or not, 
+       or any changes needed.     
+
+   c.Transprancy and colloboration: 
+   --------------------------------- 
+      ->Sprint review promotes, make transprant collobration.
+      -> the team member, stackholder, product onwner openly communicate,
+         the goal is to focus on customer requirement.
+    
+    d. identification of changes and improvement:
+    --------------------------------------------- 
+        work on the improvement areas, and changes need to be update 
+        in product backlog. 
+========================================================================        
+
+Stages in SDLC:-
+---------------- 
+             plan
+              design    ------------>
+                  coading   ------------->
+                       test    -------------->
+                          deploy ----------------->
+                            maintenance 
+
+communication in SDLC:-
+-------------------------  
+
+1.Regular meetings:-
+------------------- 
+     conduct regualr mettings to discuss the project progress, 
+               1. daily stand up
+               2. sprint planning 
+               3. sprint review 
+               4. sprint reterespective.
+
+2.open and transprant communication:-
+----------------------------------------
+    use open communication channel such slack, ms team, for real-time
+    communication.
+    All the team memeber should have access to the project documents, 
+         srs,activity diagram, flow diagram, user stories,.....
+
+3.Encourage Active participant:-
+ ------------------------------- 
+   -> A culture, where all the team members feel comfortable to share their ideas.
+   -> colloborate design making. 
+
+4.cross functional colloboration:-
+----------------------------------- 
+    colloborate with different skill sets persons, share some ideas
+       front end skills,
+       backend skills, 
+         this leads to improve the quality of the product.
+
+5.Align documents:- 
+  ------------------ 
+           All the software document are align to the team, and should 
+           be updated time to time, and sync with team member.
+==========================================================================
+Collaborate Among Different Team in SDLC:-
+--------------------------------------------
+1.Requiremnt Gathering Phase:-
+  --------------------------- 
+      steps 1: Engage stackholder  (client)
+                collaborate with the stackholder,end users,and other 
+                project member to understand the requirement.
+
+      step 2: Conduct workshop, 
+                ->show some sample demo, to get clear understanding,
+      
+      step 3:Document Requiremnt: 
+                Start writing the Requiremnt documentation, by collective 
+                understanding of all memeber.
+
+ 
+
+
+
+2.Design phase:-
+ -----------------    
+       step 1: collaborate design session:
+                   get the ideas from different experts, how the design 
+                   should look,  
+       
+       step 2: Design Review:
+                  Get the design feedback from the team memeber, 
+       
+       step 3: develope prototype:  
+                  develope a prototype of the feature, how it works 
+                  the functionality     
+
+
+
+3. developement phase:-
+ -------------------------   
+      step 1: daily stand up, 
+                 take a new task for the implementation 
+
+      step 2: coading    (eclipse)
+                  start writing the code, with team collaboration,                                       
+                   eg:-
+                   --- 
+                      use some version control system. (code collaboration)
+                    push the code to the remote repository. 
+     
+     
+      step 3:code review, 
+                  code review should happen, 
+                  use some code quality tools. eg:- sonarcube
+                  naming conventions ---> follow best practices
+                  code should be readiblity (any developer can understand the code)
+
+
+
+
+
+
+4. Testing Phase:-
+-------------------- 
+     step 1:  Test plan meeting
+     ------- 
+         ->what type of testing we can do for the product. 
+         -> how to approach of the testing. 
+
+    step 2:- set up a defect tracking tools
+    --------   
+           -> some of the defect tracking tools are, 
+               eg:-
+               ---- 
+                 ->jira 
+                 ->trello    
+
+           -> during testing phase if the tester finds any issue/bug 
+           in the functionality, It need to be reported to developer
+           using any tools, jira, trello.  
+
+           ->manager/product owner/ scrum master and other team member 
+           can able to see the issue which are raised in testing phase.
+
+           jira/trello:-
+           --------------
+              It is a central issue tracking system, 
+                all the issues like properly categories, 
+                        resolved issue,
+                        pending issue, 
+                The issues are clearly visible in the dashboard. 
+    
+    step 3:- Test Result Report Documentation
+    ------  
+            After testing the function, maintain a test report for the
+            passed test and failed test.
+
+ 
+  step 4: Defect tracking metting:- 
+  ------- 
+         -> list out all the defects,   
+         -> prioritize the defects based on critical/priority.
+         -> action plan to fix the issues.      
+
+  step 5:-
+   --------- 
+           types of testing will be done 
+              -> unit testing    ----------------> developer will do this
+              -> functional testing   ------------> check for login functionality,  booking functionality,...
+              -> integration testing 
+              -> system testing 
+
+              User Acceptance Testing:-
+              -------------------------
+              Acceptance testing is the last phase of software 
+              testing, before it goes to the customer.
+
+
+
+
+5.Deployment Phase:-
+--------------------      
+    It is deployed to production server, the software is live, and it is 
+    used by end user. 
+
+         Post-deployment it has 2 phase
+                   1. operate phase.
+                   2. monitor phase.
+      operate phase:-
+      ---------------- 
+              The software is used by end user. 
+      
+      monitor phase:- (maintanance phase)
+      ---------------      
+          here the software is monitored, 
+             ->data backup 
+             ->patch update,
+             ->there should be a support team, to manage the issue. 
+==========================================================================             
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,358 @@
+language. 
+   communication (we used for communication)
+
+programming language.  
+   It is communication with the system. 
+
+c,c++, python,java,sql,html.....   
+
+Evolution of programming language.
+-----------------------------------
+1. machine level language.
+     0's and 1's 
+
+     2       +       2 =      4  -->  (decimal)   --->
+     1010  0101    1010  --->  01010    binary     ---> it cannot directly understand by 
+                                              human  , require knowledege of 
+                                            number system, 
+
+
+2. Assembly level language. 
+------------------------------
+      It has phenomics and symbols, 
+        ADD, SUB,MUL,DIV,
+     
+      2 ADD 2 
+      4 ADD 5
+
+      Assembler is used to convert the assembly level 
+      language to binary language 
+         2  ------> 1010 
+         ADD ------> 1001
+           assembler
+
+
+3. High level language.
+----------------------------
+       It is understand by machine and human.  
+       c, cobol, fortan,....
+       
+       C is the mother for all other programming language.
+
+       High level feature: condition stmt, looping stmt. 
+       low level feature: pointer concept
+       
+       later C is termed as middle level language. 
+
+
+4. oops:-  
+      ->It is a design pattern. 
+      ->It helps to create the software based on real world objects. 
+   
+   why we create software:-
+   ------------------------- 
+      to solve day to day life problem (real life problem).
+
+    eg:-
+    ----
+      20 years back, if we want to buy a food we need to go to the restraunt. 
+
+      go the restraunt.
+      check the menu 
+      place the order.
+      payment for the order.
+      wait for the order to prepare. 
+      collect the order 
+
+       zomato, swiggy,....
+
+    some of the problem has been solved. 
+    -------------------------------------- 
+    banking software.
+    ecommerce.
+    transport --> uber, ola,rapido,
+    ticket booking--> irctc,
+    metting,
+    social,
+
+  
+   where we need software. 
+   ----------------------- 
+      1. farmers direct trading.
+      2. 
+
+5.data science / AI / Machine learning.
+====================================================================     
+Application/ software. 
+
+1. desktop application. 
+2. web application. 
+     a. static web application.
+     b. dynamic web application.
+
+1.desktop application:-
+------------------------
+    --> It is installed in user system.  (in user os). 
+    --> user has to take care about maintaince  
+
+2.web application. 
+-------------------- 
+    a.static web application. 
+          the content is same to all the users. 
+    
+    b.dynamic web application
+        the content is different to all the user.
+========================================================================
+web application architecture:-
+------------------------------- 
+   frontend -->presentation layer    (react , angular)
+   backend  --> Business layer (business logic)  --> node js, java, python,.net
+   database -->data layer. (permanent storage)
+
+=======================================================================
+Architecture of computer. 
+
+components of computer. 
+   input device 
+   output device
+   cpu
+
+components of cpu:-
+---------------------
+ 1. ALU    -------------->perform arthithmetic operation, logical operation
+ 2. Control unit    ---> flow between the cpu, memory and input
+ 3. memory unit  --->store the data 
+
+=================================================================
+memory hierarchey:-
+   cpu register 
+   cache memory 
+   primary primary (RAM)
+   secondary memory (hard disk)
+
+==================================================================
+
+==================================================================
+task:-
+------
+1. Architecture of computer.
+2. memory hierarchey.
+3.what is need of software.
+=================================================================
+How cpu execute the instruction.
+---------------------------------
+fetch 
+decode 
+store 
+update
+=================================================================
+cpu --> brain  
+1 cpu ---> at a time only one task will execute.
+multi core processor --> It has multiple cpu's, parallel processing,
+=====================================================================
+Networking.
+
+internet.
+   ->It connets the devices in the www network.
+   -> internet <==> inter connected devices.
+
+different types network.
+LAN 
+MAN 
+PAN
+WAN 
+WWW
+=============================================================
+Protocol:-
+-----------
+   set of rules for communication. 
+
+ip 
+http 
+ftp 
+udp 
+tcp 
+tcp/ip 
+smpt  
+
+ipv4    vs   ipv6
+32            128 
+numeric       numeric + character. 
+================================================================
+
+
+OSI:-
+--------
+ Open System Interconnect:-  
+
+-> It tells how data is sent from one computer to other computer,
+   While transferring it will go through certain stages. 
+
+       7 layers 
+    layers:-
+    --------- 
+   1. Application layer  --> top layer --> email app , type the email
+   2. presentation layer --> data comprassion ,encryption
+   3. session layer    --> establish the communication, receiver id,internet.
+   
+   4. transport layer  --> data will divided into small units for transmission
+                            (ready for trannmission) --> check network reliability.
+   5.network layers  --> data is divided in to packtes
+  
+   6.data link layer  -->  All the packtes are encapsulate in frame.
+                           It guranteed that no packet is missing, 
+                           all the data will transferred to receiver.
+ 
+   7.physical layer.  --> the frames are converted into binary number 0's 
+                          and 1's
+
+
+real world scanario:-
+1. Application layer  --> write the the letter in the paper
+2. Presentation layer --> fold the paper, put in to the envelope
+3. session layer     ---> write the receiver address, on top of the envelope.
+
+4.transport layer --> proper packing , how many boxes, 
+5.network layer --> determine the route 
+6. Data Link layer -->    bangalore  to australia 
+                       bangalore  --> mumbai --> australia
+==========================================================================
+To Remember:-
+-------------- 
+All   People should  try new domonizo pizza 
+
+=========================================================================
+Network Termonologies:-
+-------------------------
+Ip Address:-   It is a unique identification number over the network.
+------------
+                 192.168.1.23   (network will give --> logical address).
+                 
+                 ->depending on the network,ip address will change.
+MAC address:-
+------------- 
+            -> It is provided by computer providers.
+            -> It is also unique to every system 
+            -> address is fixed, it can be changed
+
+firewall:-
+-----------  
+         -> It comes under network security.
+         -> It will monitor the incoming and outgoing request.
+
+
+router:-
+--------- 
+         -> connect the network, and send the data.
+
+DNS:-  [Domain Name System].
+--------  
+      It is going convert domain name into IP address. 
+        
+          www.flipkart.com ---DNS --- 192.34.56.24
+
+
+============================================================
+1.what is internet..?
+2.what is computer network..?
+3.Different types Network..?
+4.Write some Network Termonologies..?
+===================================================
+
+Broadcast:- 
+   -> It is type communication where sender and receiver communicate 
+      simultaneously. 
+           1. unicast 
+           2. multicast
+       
+   1.unicast:-
+   --------------
+             one to one communication. 
+             one sender, one receiver. 
+              eg:-
+              ---- 
+                 whatapp video call
+
+   2.multicast:-
+   -------------
+             one to many communication.  
+             one sender ,many receiver. 
+
+              eg:-
+              ---- 
+                 live match streaming (ipl, football,)
+================================================================
+
+Network Topology:-
+----------------
+  It describe the how the devices are connected to the network.
+
+types of bus topology:-
+----------------------
+1. bus 
+2. ring 
+3. star.
+4. tree.
+5. mesh  
+
+1.bus topology:-
+------------------
+  -> Single cable is enough.
+  -> Waiting time is more , because all the nodes uses the same cable.
+
+2.ring topology:-
+------------------
+ -> It will do circular round   
+ -> Time consumption is more [no direct connection between the devices,
+                                pass the data one by one]
+
+3.start topolgy:-
+------------------
+        -> Central hub is there, all the devices are connected to 
+           central hub.
+
+        -> if any devices want to send means , he will send to hub, and hub 
+         will send to receiver.  
+
+         disadv:-
+         -------- 
+           if hub fails, then all the network will fail.
+
+4.Mesh Topology 
+
+ -> every device has connection to other device in the network
+      -> set up cost is more because it needs more cable. 
+          
+          formula to find out, number cables required. 
+                 n * (n-1)
+                 ------------
+                     2
+             n = number of device. 
+
+          if we have 5 devices  
+                     5 * (4)
+                    -------------
+                         2    
+
+            It needs 10 cable. 
+
+=================================================================
+Assignment 1: Draw your Home Network Topology and explain 
+              how you are accessing the RPS Lab environment.
+================================================================              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

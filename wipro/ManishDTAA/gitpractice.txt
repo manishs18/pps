@@ -1,0 +1,177 @@
+user@DESKTOP-SBBABE2 MINGW64 /d/git repository/project1
+$ git config --local user.name "b13user01"
+fatal: --local can only be used inside a git repository
+
+user@DESKTOP-SBBABE2 MINGW64 /d/git repository/project1
+$ git init
+Initialized empty Git repository in D:/git repository/project1/.git/
+
+user@DESKTOP-SBBABE2 MINGW64 /d/git repository/project1 (master)
+$ git config --local user.name "b13user01"
+
+user@DESKTOP-SBBABE2 MINGW64 /d/git repository/project1 (master)
+$ git config --local user.email "b13user01@rpsconsulting.in"
+
+user@DESKTOP-SBBABE2 MINGW64 /d/git repository/project1 (master)
+$ git add .
+
+user@DESKTOP-SBBABE2 MINGW64 /d/git repository/project1 (master)
+$ git commit -m "first commit"
+[master (root-commit) 3605c8f] first commit
+ 1 file changed, 358 insertions(+)
+ create mode 100644 day1.txt
+
+user@DESKTOP-SBBABE2 MINGW64 /d/git repository/project1 (master)
+$ git remote add origin https://gitlab.rpsconsulting.in/b13user01/repo1.git
+
+user@DESKTOP-SBBABE2 MINGW64 /d/git repository/project1 (master)
+$ git push -u origin master
+warning: missing OAuth configuration for gitlab.rpsconsulting.in - see https://aka.ms/gcm/gitlab for more information
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 3.41 KiB | 1.71 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://gitlab.rpsconsulting.in/b13user01/repo1.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+user@DESKTOP-SBBABE2 MINGW64 /d/git repository/project1 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        day2/
+        day3/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+user@DESKTOP-SBBABE2 MINGW64 /d/git repository/project1 (master)
+$ git add .
+
+user@DESKTOP-SBBABE2 MINGW64 /d/git repository/project1 (master)
+$ git commit -m "added day2 and day3"
+[master d39ccaa] added day2 and day3
+ 2 files changed, 693 insertions(+)
+ create mode 100644 day2/day2.txt
+ create mode 100644 day3/day3.txt
+
+user@DESKTOP-SBBABE2 MINGW64 /d/git repository/project1 (master)
+$ git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 6.91 KiB | 1.73 MiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://gitlab.rpsconsulting.in/b13user01/repo1.git
+   3605c8f..d39ccaa  master -> master
+
+user@DESKTOP-SBBABE2 MINGW64 /d/git repository/project1 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+user@DESKTOP-SBBABE2 MINGW64 /d/git repository/project1 (master)
+$ git commit
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+user@DESKTOP-SBBABE2 MINGW64 /d/git repository/project1 (master)
+$ git pull
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 2 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (2/2), 245 bytes | 1024 bytes/s, done.
+From https://gitlab.rpsconsulting.in/b13user01/repo1
+   d39ccaa..c3cdc03  master     -> origin/master
+Updating d39ccaa..c3cdc03
+Fast-forward
+ day2/day2.txt | 305 ----------------------------------------------------------
+ 1 file changed, 305 deletions(-)
+ delete mode 100644 day2/day2.txt
+
+user@DESKTOP-SBBABE2 MINGW64 /d/git repository/project1 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        hello.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+user@DESKTOP-SBBABE2 MINGW64 /d/git repository/project1 (master)
+$ git add hello.txt
+
+user@DESKTOP-SBBABE2 MINGW64 /d/git repository/project1 (master)
+$ git commit -m "added hello file"
+[master 6d69d5a] added hello file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello.txt
+
+user@DESKTOP-SBBABE2 MINGW64 /d/git repository/project1 (master)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 310 bytes | 155.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://gitlab.rpsconsulting.in/b13user01/repo1.git
+   c3cdc03..6d69d5a  master -> master
+
+user@DESKTOP-SBBABE2 MINGW64 /d/git repository/project1 (master)
+$ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 262 bytes | 0 bytes/s, done.
+From https://gitlab.rpsconsulting.in/b13user01/repo1
+   6d69d5a..c76a2fe  master     -> origin/master
+Updating 6d69d5a..c76a2fe
+Fast-forward
+ hello.txt | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+user@DESKTOP-SBBABE2 MINGW64 /d/git repository/project1 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+user@DESKTOP-SBBABE2 MINGW64 /d/git repository/project1 (master)
+$ git add hello.txt
+
+user@DESKTOP-SBBABE2 MINGW64 /d/git repository/project1 (master)
+$ git commit -m "added kiwi"
+[master 13d5b77] added kiwi
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+user@DESKTOP-SBBABE2 MINGW64 /d/git repository/project1 (master)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 284 bytes | 284.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+To https://gitlab.rpsconsulting.in/b13user01/repo1.git
+   c76a2fe..13d5b77  master -> master
+

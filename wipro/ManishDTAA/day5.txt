@@ -1,0 +1,425 @@
+Git and Gitlab/Github 
+------------------------
+
+Git:-
+------- 
+  ->It is founded by the same Guy who founded linux --> Linux Torvald.
+
+  -> Git is Popular, open source version control tool.
+  -> Git is used to track the code history.
+  -> Git helps us to colloborate on the project.
+  -> Git is a Distributed Version Control System.  
+
+
+Git vs Github  Vs Gitlab 
+--------------------------- 
+
+Git:-  (local system)
+-----
+  ->Git is installed in the local system.
+  ->It helps to track the code change in the local machine.
+
+Github:- (cloud system)
+--------- 
+   ->It is a Cloud based repository service.  
+
+Gitlab:- (cloud system)
+-------
+   -> It is also cloud based repository. 
+   ->additionaly it has cicd.
+
+===========================================================================
+
+wipro 
+    -> gitpractice 
+              ----> project1  (repository1)  git init
+              ----> project2  (repository2)
+                    .....
+                    ..... 
+
+
+
+How Git track changes in the local system.
+--------------------------------------------
+steps:-
+------------
+step 1:-
+---------
+         (1 time) -> only at the first time when we create repository
+git init --> It initilised a empty git repository 
+               .git file (hidden)
+
+
+step2:-
+----------- 
+   a. git remote add origin url  
+
+   b. how to check the current origin --> (which our terminal is pointed)
+         git remote -v    (tells about remote repostory url)
+
+   c. to update origin 
+          git remote set-url  origin url       
+
+step 3:-
+----------
+        (n times)-> when ever we make chages
+git add filename  --> add the specific file to the staging area
+git add .       ---> add all the files from the current directory to stage
+git add file1 file2  
+git commit -m "msg"
+git push 
+
+==================================================
+ git log 
+ git log --oneline   (short notation)
+
+ By using git log we can see the commit history 
+
+==================================================
+git restore 
+git diff 
+====================================================
+git fork and clone.
+
+fork:-
+------ 
+   copy some one repository to your accout in cloud. 
+=========================================================   
+assignment:-
+------------- 
+  1.Write the architecture of Git with diagram and give some explanation
+  2.list all the git commands
+
+======================================================
+
+Git and Github.
+----------------- 
+
+Git:-   (local system) [local repository] [developer system]
+------ 
+  -> Git is a Version Control System 
+  -> Version Control System is a tool that helps to track code changes.  
+
+         project feature:-
+         ----------------- 
+             login & register feature  
+             product 
+             cart 
+             payment                  ---> version 1
+
+             adding some new feature   
+             rewards 
+             offers                   ----> version 2
+
+            if client says only version 1 code is required, then easily
+            we can manage the code
+  
+  ->It is founded by the same Guy who founded linux --> Linux Torvald.
+
+  -> Git is Popular, open source version control tool.
+  -> Git is used to track the code history.
+  -> Git helps us to colloborate on the project.
+  -> Git is a Distributed Version Control System.  
+                  
+                  github.com  (centralised repository)
+                     |
+         ---------------------------------------------
+        |            |          |           |         | 
+team  memebr 1   memeber 2   member 3    member 4   member 5  (local repository)
+
+    every member of team can push his code to github, and he call 
+    pull other memeber code.
+
+    so every member has a code of every one --> [distribute version control system]
+
+Github:- [centralised repository] [cloud system]
+----------  
+   ->Github is a website that allows developers to store and manage the code
+   using git.
+       website :  github.com 
+
+==========================================================================
+Note:-
+------ 
+  repository means ==> It is nothing but a project folder. 
+=========================================================================
+login to github:-
+-----------------  
+   make a note:- username, email, password
+=======================================================================
+
+install git in your local. 
+     https://www.git-scm.com/download/win 
+
+=======================================================================
+repository
+------------- 
+         local repository                        central repository
+         ----------------                        -------------------
+          developer system                         github.com
+         
+                           --->push
+         repository1    -------------------------  http:github.com/repo1 
+                           <--- pull
+        
+         repository2    --------------------------http:github.com/repo2
+
+======================================================================
+life cycle of human being  
+    born --> school --> collage --> job --> marriage --> children-->
+
+life cycle of git  
+     working directory
+        |             ---> demo1.txt 
+        |             ---> demo2.txt,demo3.txt 
+        |                     (we have some many working directory in your systmem)
+     initilization 
+        |               git init  ---> It makes the directory as a git repository   
+        |               
+        |          
+        |               git add demo1.txt
+     staging area     (filter the files, which needs track changes in git) --> the files in the staging area are ready to be commited
+        |                
+        |  
+        |                 git commit     (It will track changes)  
+      local repository (local machine)  
+        |                 git commit     (It will track changes)    
+        |
+      remote repository (github.com, gitlab.com)      
+        |                git push
+        |
+
+
+=====================================================================
+Git Architecture:-
+--------------------- 
+       1.workspace
+       2.staging area 
+       3.local repository
+       4.remote repository 
+
+1.workspace:-
+--------------- 
+       It is a working directory, where our files stored. 
+       demo1.txt 
+       demo2.txt 
+
+2.staging area:-  git add
+---------------- 
+        the purpose is to let you pick the files, which are going to be 
+        commited and which not. 
+
+        eg:-
+        ---- 
+            employee want to join company 
+                 
+        employee 1,2,3 -------> interview   ----> joining --> employee1,2
+                                (staging)
+
+3.local repository:-    git commit
+--------------------- 
+        after git commite  -> the files are locally commited to local 
+        repository. 
+
+4.remote repository:-   git push
+---------------------
+         after git push -> the files will be pushed to remote repository 
+         from local repository. 
+=======================================================================
+
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/mytraining1/repo1.git
+git push -u origin main
+
+
+========================================================
+ configure username and password in git. 
+    git config --global user.name "yourusername"
+    git config --global user.email "youremail"
+
+=========================================================
+push a file from local repository to remote repository:-
+----------------------------------------------------------
+1. create a remote repository. 
+      got to github and create 
+
+
+2. create a local repository. 
+       repository 1  
+
+        git init        -----> initilize a new git git repo
+        git add  filename    -----> add the file staging area
+        git commit -m "first commit"   --> commit the file to local repo
+        
+        git remote add origin  --> add remote origin
+        git push origin master   --->  push to remote repository
+
+
+2nd time:-
+----------- 
+      git add . 
+      git commit 
+      git push 
+
+=====================================================================
+for adding the remote origin:-
+-------------------------------
+ git remote add origin url      (adding the url)
+ git remote set-url origin url  (update)
+
+==================================================================
+for sending the files into the staging area.  
+       
+       working directory   (git init)
+             |
+             |      git add
+             |
+         staging area
+
+  we use git add to send files to staging area. 
+
+  different ways we can add:-
+  --------------------------- 
+  1. to add all the files into staging area.   
+      
+      git add . 
+
+  2. to add one file 
+      
+       git add demo.txt 
+       git add Hello.java    
+
+  3.we can use some pattern 
+       
+       git add *.java       //-->It adds all the file with java extension.
+       git add *.html       //--> It add all the files with html extension.
+
+=======================================================================       
+git status:-
+-------------- 
+      It gives the status about file status, 
+        --> which file is tracked by git 
+        --> which file is modified 
+        --> which file is untracked by git.
+
+file status life cycle:-
+------------------------   
+  untracked   
+    |
+  traceked 
+        staged 
+        commit 
+        modified
+=================================================================        
+Git Reset:- (Git Restore)
+------------- 
+   1. staging area to working area 
+         git reset filename    
+
+   2. reset the commit to working directory. 
+
+      To see all the commit history. 
+        
+        git log --oneline. 
+
+        commit id   commit msg 
+        ---------   ----------- 
+       88df45          third commit  (--> Head)
+      uu6767t          second commit  
+      78567gg          first commit
+        
+        git reset uu6767t
+
+=========================================================== 
+Git diff:-
+------------ 
+    -> It is showing difference between the two commit.
+    ->It shows the difference between working directory and commited area.
+   
+   git diff file1.txt 
+   git diff  
+   git diff commit1  commit2 
+
+=============================================================
+Git clone:-
+------------ 
+   It will take the repository from remote to local.  
+
+   git clone url
+============================================================
+git fork:-
+----------- 
+   ->copy some other user repository in to your github account.
+
+===============================================================  
+Git Branches:-                        (java --oops) (git -- branches)
+---------------- 
+     -> It is the feature of the git. 
+
+     eg:-
+     ---- 
+        In project we have some many features,  while developing 
+        any new feature,we push the code to seperate branch until it 
+        completes, later when the work is finished we push to 
+        master branch. 
+                       
+                       -----------feature branch 1--        -----------------------------booking feature
+                     /                           /
+           0-------------------------------------   main/master   (login, register)
+                    /           /
+                   /           /      git checkout branch2  
+                  -------------
+                     branch 2
+
+          -> It is a new version on main repository. 
+
+Note:-
+-------- 
+    by default it will have main branch  (main/master)
+
+
+1. To see all the branches. 
+       git branch          
+
+2. To create branch  
+        git branch branch_name 
+
+3. To move into a branch. 
+      git checkout branch_name      
+
+4. To create a branche and also move into it. 
+       git checkout -b branch_name      
+
+5. To merge a branch. 
+      git merge branch_name  
+
+6. to delete a branch that is merge. 
+      git branch -d branch_name         (softdelete)
+
+7. to delete a branch that is not merged. 
+      git branch D branch_name
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

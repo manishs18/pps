@@ -1,0 +1,321 @@
+SDLC:-
+-------
+  Software Development Life Cycle.
+
+human life cycle --> birth -> schooling-> degree -> job -->  
+software life cycle -->requiremt gathering 
+                         feasibity study (planning) 
+                            design 
+                              coding 
+                                testing 
+                                   deployment 
+                                      maintanance 
+                                      
+
+why we develope the software:-
+------------------------------ 
+  --> to make the things automate, 
+           (or)
+     --> to solve real world problem. 
+         eg:-
+         ---
+            booking ticket --> online app 
+            booking cab,ticket,food, grocery,...for every thing we have app.
+
+1.service based company.
+2.product based company.
+
+
+1.service based company:-
+-------------------------- 
+  tcs, wipro,accenture,capgemini, infosys 
+    
+    business domain 
+      banking -->commercial banking, credit, loan,....
+      ecommere --> 
+      healthcare 
+      automobile 
+      entertainment 
+      trading 
+      social media 
+      govertment 
+      reasearch and development 
+      aerospace 
+      logistics
+      communication 
+      weather forcasting 
+      agriculture 
+    
+
+Product based company:-
+------------------------- 
+1. oracle, google , microsoft, vm ware, adobe,flipkart,...
+  research dept (R&D):-
+  ------------------------ 
+     Product based companies get the requirement from the R&D team.
+   
+   revenu:- subscription, commision,
+
+=====================================================================
+requiremt gathering 
+feasibity study (planning) 
+design 
+coding 
+testing 
+deployment 
+maintanance 
+
+
+Requirement Gathering:-
+---------------------- 
+   gathering the requirement from the client.  
+
+Feasibity Study (planning):- Requirement Analysis
+----------------------------- 
+ resource availiblity. 
+ financial study.
+ external service --> payment gateway,email service,....
+
+design:-
+--------- 
+   1. Low level design
+   2. High Level design
+
+  High level design: 
+  ------------------ 
+    morning session     afternoon session  
+
+  low level design: 
+  ----------------- 
+    morning session                  afternoon session
+       --> sdlc                            Agile
+       --> sdlc models   
+
+
+coding:-
+-------- 
+ -> this is the phase where actually development starts.
+
+    movie booking functionality. 
+    movie cancel booking functionality.
+     login function --> refer the srs for functionality development 
+                              password validation stregth 
+                              socail media login
+       
+       unit testing:-
+       -------------- 
+          2 + 2 =4
+
+testing:-
+---------- 
+   It is nothing verfying and validating the software product, 
+   weather the customer requirement or not. 
+
+      2.2 + 2 = 4      ----> int
+                4.2    ----> float
+                4.20
+    manual testing. 
+    automation testing.   
+
+deployment:- 
+   
+   developement server. (developer pushes the code)
+   testing server. (testing team uses this server, to test the functionality)
+   production server.   (live for the end user)
+
+    the product is the deployed to the end user. 
+
+
+maintanance:- 
+   monitor the application, 
+   Provide the support when needed.    
+
+====================================================================
+what is difference project and product..?
+
+ Product:-
+     -------- 
+         -> A software is developed for multiple customer. It solves 
+         common problem. Then it is product.  
+
+         eg:-
+         ---- 
+           gmail 
+           google drive 
+           ms team      ----> mupliple customer are using
+           zoom         ---> 
+
+     Project:-
+     ---------- 
+          -> A Software is developed for single clinet.Based on 
+          client requirement it has developed. 
+
+              eg:-
+              ---- 
+                -> online axis banking-->
+                -> rps lms portal 
+                -> puma online ecommerce..  
+
+==================================================================== 
+different types of sdlc model. 
+ 1. water fall model. 
+ 2. agile 
+ 3. spiral  
+ 4. v model 
+ 4. prototype model
+
+
+1.water fall:-
+------------------
+  requiremt gathering     -------------------> 1 week     dec 5 2024
+     feasibity study (planning)        -------> 0.5 week  
+                            design        ----> 1.5 week
+                               coding      ----> 10 weeks 
+                                  testing   ---> 6 weeks 
+                                     deployment   --> 0.2 weeks
+                                        maintanance  --> daily
+
+
+
+->It is a step by step process.
+->we cannot go back to the previous step if requirement changes. 
+   (always we need to start from first step)
+
+when we use water fall model...?
+---------------------------------- 
+  --> It is used in small project. 
+  --> only when the requiremnt 100% clear . (well defined).
+
+  eg:-
+  ---- 
+    alarm app. 
+    calculor app 
+
+disadv:-
+-------- 
+   ->we cannot go back to previous stage. 
+   ->It is not useful, when the requirements gets keep changing. 
+   ->Testing will start only after developement. 
+   ->client can see the demo, only after completing the whole application,
+
+
+2. Agile:-
+------------ 
+   It is a iterative incremnetal software development model,
+   where the software product developed in sprints. 
+
+   sprint:- duration of time 1 to 4 or 6 weeks. 
+
+   in the sprint a particular product feature is developed. 
+ 
+ whatapp feature:-
+ ----------------- 
+  chat 
+  call 
+  group chat 
+  community 
+  status 
+  payment 
+  profile 
+  location
+
+  sprint 1:    3 weeks
+      chat feature    
+                 plan-> design->code->testing->deployment -> client review
+  
+  
+  sprint 2 :  2 weeks
+      call feature 
+            plan-> design->code->testing->deployment -> client review
+  
+  sprint 3: 
+       group chat and call 
+          plan-> design->code->testing->deployment -> client review
+  
+  sprint 4: 
+       status
+
+=======================================================================
+Techniques for gathering requirements 
+         (interviews, surveys, observations).   
+   interview --> ask direct questions to the stackholder to get understand about 
+                 requirement. 
+   surveys  --> conduct survey get the suggestions. 
+   observations --> buy seeing observation we can understanding the requirement. 
+=======================================================================
+what is agile..?
+--------------------
+Agile is a project management approach that emphasizes 
+adaptability, collaboration, and quick delivery over 
+following a set plan: 
+
+Adaptability: The ability to respond to change and create in an 
+            uncertain environment 
+
+Collaboration: Constant feedback allows team members to adjust to 
+            challenges and stakeholders to communicate consistently 
+
+Quick delivery: Projects are completed in short-term development cycles 
+
+Agile is based on the values and principles of the Agile Manifesto. 
+It was originally created for software development, but is now used for many different types of projects and organizations
+
+
+Agile framework. 
+--------------------
+  1.scrum 
+  2.kanban 
+  3.lean
+
+
+users roles in agile scrum:-
+----------------------------- 
+1.product owner
+2.scrum master 
+3.the team (devloper, tester,devops) 
+
+scrum ceremonies:-
+--------------------  (different metting)
+sprint planning 
+daily stand up
+spring review 
+spring reterespective 
+spring backlog refeinment
+
+basic architecture of computer
+cache memory
+cpu how flow instruction
+basic term of network terminologies
+topology
+osi layer
+volatile n non volatile
+router
+firewall
+ipv4 n ipv6
+different b/w router and switich
+different type of network
+https n http
+agile framework
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,13 @@
+Session-I Assignments 
+1. Check the python version installed on your system through commandline. 
+2. WAP to print the ASCII value of a character. [Hint : ord() function] 
+3. WAP to find difference of two small integers (not greater than 10) without using minus (-) operator. [Hint : Use ^ operator] 
+4. WAP to multiply a given number by 2 without using * (multiply operator). 
+5. WAP to calculate and display the interest on a loan amount(Rupees). 
+
+You would need three variables to hold ’principal’, Rate_of_interest’(%) and ’time’ in years and can use the formula 
+Interest=(principal*rate_of_interest*time)/100 
+Note :Take user input 
+6. Write a Python program which accepts the radius of a circle from the user and compute the area. 
+7. Write a Python program that accepts an integer (n) and computes the value of n+nn+nnn 
+8. Take a 5 digit number as input and reverse it without using loop

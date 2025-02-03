@@ -1,0 +1,129 @@
+shell scripting.
+------------------
+ ->kernel can interact with cpu,memory, devices...
+->user communicate with the os through a program called shell.
+
+why we need shell program..?
+------------------------------ 
+  to make repetative task automate. 
+
+time to time backup (database)
+regular software update,...
+automated mail send..
+
+what is shell..?
+------------------- 
+  A shell in Linux is a command-line interpreter program that 
+  allows users to interact with the operating system by typing commands
+
+What it does..?
+-----------------
+The shell acts as an interface between the user and the kernel,
+interpreting commands and executing the corresponding actions. 
+For example, if a user types ls, the shell executes the ls command. 
+
+How it works..?
+----------------
+
+The shell parses the user's input, evaluates it, searches for
+the corresponding program, and executes it
+
+different types of shell..?
+----------------------------
+1.Bourne shell (sh): A Linux shell 
+
+2.Cshell (csh): A Linux shell with syntax 
+                and usage similar to C programming 
+
+
+3.Bourne Again Shell (bash): The most widely used shell in 
+                            Linux systems and the default login shell 
+
+
+==================================================================
+
+
+eg:-
+----- 
+java/.net  --> for developing the application 
+                  (desktop/ web application).
+
+sql       --> interact with database software.
+
+html&css  --> for developing the web page. 
+
+shell program -->we can interact with os. 
+
+what is shell program...?
+---------------------------- 
+    ->It is used to interact with the os, by executing some commands. 
+         copy, move, make directory, remove directory,... 
+         cp 
+         mv 
+         ls 
+         pwd 
+         cd 
+         cat 
+         touch 
+         .........etc
+==============================================================
+Note:-
+----------
+sh and bash are both command-line interpreters and shells for 
+Unix operating systems, but bash is an improved version of sh
+
+
+shell programming example:-
+------------------------------- 
+  save the file with .sh extension 
+
+task:-
+-------- 
+   1.take 2 input with single read statement, 
+     perform add and substract
+
+enter the value of a and b   
+2 3  
+  add 5
+  sub -1
+===========================================================  
+operator:-
+------------
+    arithmetic operator :+, - ,.....
+    relational operator : 
+                    >  , < ,......  
+                    -gt , -lt  , -ge ,-le,....
+    logical  operator  &,|, ! 
+
+    file operator:-  
+                  -e It checks weather the file exists or not. 
+                  -r check for read permission.
+                  -w check for write permission. 
+                  -x check for execute permission.
+
+=============================================================
+
+find largest of 3 number.
+-------------------------
+===================================================
+functions:-
+---------------
+
+Arrays:-
+---------- 
+
+
+================================================
+
+
+
+
+
+
+
+
+
+
+
+
+

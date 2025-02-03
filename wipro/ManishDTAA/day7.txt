@@ -1,0 +1,140 @@
+
+shell script recap:-
+-----------------------
+ --> #!  shebang this is the first line 
+
+ --> # --> single comment 
+      <<same-text 
+          -----
+          -----
+       same-text
+ 
+ -->operators 
+      relational operators
+        -gt 
+        -lt
+        -eq
+
+  --> (()) --> some expression we can write
+-> condition stmt 
+     -> if, if else, else if ladder, nested if
+     ->case stmt 
+          ;; -> break 
+-> looping stmt 
+      for 
+      while 
+      until 
+
+task:-
+--------
+   2. basic task 
+       a. write a command to create a file named demo.txt inside Movies directory 
+       b. copy  hello.txt files from Desktop to Downloads directory 
+       c. Write a command to display all the files from Movies Directory
+       d. display first 15 lines of demo.txt file
+       e. using cat command, create a new file and write the data to the file.
+       f. read the file content of demo.txt
+  3. explain absolute and relative path
+
+========================================================================
+task:-
+------- 
+  ->count the number of lines present in the file.
+  ->count the number files present in the specific directory 
+  ->check weather the secific file is present or not, if it present 
+    print file is present else file not found. 
+========================================================================    
+error handling 
+exit code 
+$? -->
+======================================================================
+exit 0 --> success (no error)
+=======================================================================
+Testing terminologies:-
+-------------------------
+QA:-
+-----  
+   process oriented  
+     -> follow best practices during testing. 
+     -> test all scanario 
+         login:-
+            correct user and password 
+            empty submit 
+            lower case& upper user name should be checked
+            
+         every possible condition should be tested.   
+
+QC:-
+---
+
+RTM:-
+------ 
+   to ensure every requirement has been tested. 
+   task:-
+   ------ 
+      do a sample rtm for ecommerec application.
+
+  ================================================
+CRS: customer requirement specification ->needs  customer document
+BRS: business requirement specification. -> stackholder, cost analays,delivery
+                                -> It's a basic contract between the customer and the vendor
+
+SRS: system requirement specification. -> decides architecture,
+                                          flow diagram, class diagram,
+                                        fronted-> backend-> db 
+                                        functional 
+                                        non-functional 
+
+BA: business analyst.
+HR: human resource.
+HLD: high level design.
+LLD: low level design.
+TE: test engineer.
+PM: project manager
+
+
+A project manager's roles and responsibilities include:
+Planning: Planning the project and ensuring it's on time, on budget, and within scope 
+Leading: Leading the project team 
+Executing: Executing the project 
+Managing: Managing schedules and the budget 
+Preparing: Preparing documents 
+Maintaining: Maintaining and troubleshooting deliverables 
+Risk management: Identifying, evaluating, and preventing or mitigating risks to the project 
+Communication: Managing communication 
+Quality: Managing quality
+====================================================================
+
+
+Regression Testing:-
+---------------------
+
+Regression testing is a software testing process that ensures that new changes to an application don't break existing functionality: 
+Purpose
+To verify that new features, updates, or changes don't cause issues in the code, such as old bugs reappearing 
+Importance
+A common issue in software development is that new changes can cause old bugs to reappear. Regression testing helps to ensure that the software maintains its quality and continues to function as expected 
+How it works
+Regression testing involves re-running tests that were originally scripted when known problems were fixed. This helps to ensure that new changes haven't caused any regressions 
+When to perform
+Regression testing should be performed after every change to the software
+
+============================================================
+
+Functional testing tools
+1. Selenium(core java ,python,…)
+
+performance testing tools
+checking the load and response time.
+1. Load runner
+2. J meter.
+3. Qa Load
+
+
+=====================================================
+1. STLC 
+2. Types of testing
+
+
+
+

@@ -1,0 +1,13 @@
+# Solution of drag and drop the pseudo-code magnets to the pseudo-code box and create the appropriate pseudo-code
+
+#Pseudo-code Magnets:
+
+while(start != end)do
+if(ls_Next_Block_Bomb)then
+move Down
+move Down
+else
+move Right
+move Right
+end-if
+end-while

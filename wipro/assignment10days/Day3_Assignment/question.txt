@@ -1,0 +1,32 @@
+1.   Write a Python program that prints all the numbers from 0 to 6 except 3 and 6.
+Note : Use 'continue' statement. 
+
+2.   Write a Python program to get the Fibonacci series between 0 to 50
+
+3.   Write a Python program which iterates the integers from 1 to 50. 
+     For multiples of three print "Fizz" instead of the number and for the multiples of five print "Buzz".
+     For numbers which are multiples of both three and five print "FizzBuzz".
+
+4.   Write a Python program to check whether an alphabet is a vowel or consonant
+
+5.   Write a Python program to calculate the sum and average of n integer numbers (input from the user). Input 0 to finish.
+
+6.   Write a Python program to create the multiplication table (from 1 to 10) of a number.
+
+7.   Write a program to sum seven terms of given series.
+     [Hint: use Math. Factorial(x) by import math]
+
+8.   When interest compounds q times per year at an annual rate of r % for n years, the principle p compounds to an amount a as per the following formula a = p ( 1 + r / q ) nq
+     Write a program to read 10 sets of p, r, n & q and calculate the corresponding as.
+
+9.  The policy followed by a company to process customer orders is given by the following rules:
+    (a) If a customer order is less than or equal to that in stock and has credit is OK, supply has requirement.
+    (b) If has credit is not OK do not supply. Send him intimation.
+    (c) If has credit is Ok but the item in stock is less than has order, supply what is in stock.
+     Intimate to him data the balance will be shipped.
+
+10. A university has the following rules for a student to qualify for a degree with A as the main subject and B as the subsidiary subject:
+    (a) He should get 55 percent or more in A and 45 percent or more in B.
+    (b) If he gets than 55 percent in A he should get 55 percent or more in B. However, he should get at least 45 percent in A.
+    (c) If he gets less than 45 percent in B and 65 percent or more in A he is allowed to reappear in an examination in B to qualify.
+    (d) In all other cases he is declared to have failed.

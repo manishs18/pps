@@ -1,0 +1,40 @@
+'''Assignment 1:
+Pseudocode Development - Task: Write a detailed pseudocode for a simple program that takes a number as input, 
+calculates the square if it's even or the cube if it's odd, and then outputs the result. 
+Incorporate conditional and looping constructs.
+'''
+
+START
+
+# Step 1: Initialize the program
+PRINT "Welcome to the Number Processor!"
+
+# Step 2: Input handling with a loop
+WHILE True DO
+    PRINT "Enter a number (or type 'exit' to quit): "
+    INPUT userInput
+
+    # Step 3: Check for exit condition
+    IF userInput = "exit" THEN
+        PRINT "Thank you for using the program. Goodbye!"
+        BREAK
+
+    # Step 4: Validate input
+    TRY
+        number ← CONVERT userInput TO INTEGER
+    CATCH
+        PRINT "Invalid input! Please enter a valid number."
+        CONTINUE
+
+    # Step 5: Process the number
+    IF number MOD 2 = 0 THEN
+        result ← number * number
+        PRINT "The number is even. Its square is: ", result
+    ELSE
+        result ← number * number * number
+        PRINT "The number is odd. Its cube is: ", result
+    ENDIF
+
+ENDWHILE
+
+END
