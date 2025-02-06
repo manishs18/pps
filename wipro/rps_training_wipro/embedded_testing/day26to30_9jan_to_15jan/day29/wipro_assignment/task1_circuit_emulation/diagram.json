@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "author": "Manish Kumar Singh",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 58.2, "left": 57, "attrs": {} },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": -70.8,
+      "left": 176.6,
+      "attrs": { "color": "red" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": -24.85,
+      "left": 28.8,
+      "attrs": { "value": "1000" }
+    }
+  ],
+  "connections": [
+    [ "led1:A", "uno:13", "green", [ "v96", "h-19.2" ] ],
+    [ "led1:C", "r1:2", "green", [ "v9.6", "h-105.2" ] ],
+    [ "r1:1", "uno:GND.1", "green", [ "v86.4", "h144" ] ]
+  ],
+  "dependencies": {}
+}

@@ -1,0 +1,96 @@
+Why Debugging is Important
+Identify Errors
+Debugging helps locate and fix issues such as syntax errors, logical bugs, or runtime errors that cause incorrect behavior or crashes.
+
+Understand Program Flow
+Stepping through the code reveals how the program executes, helping you understand control flow and function interactions.
+
+Verify Logic
+It ensures your code behaves as expected, allowing you to validate assumptions and spot mistakes in the logic.
+
+Optimize Performance
+Debugging can uncover inefficiencies or bottlenecks, enabling performance improvements.
+
+Catch Edge Cases
+It helps identify rare scenarios or inputs that might cause unexpected behavior, improving reliability.
+
+Enhance Learning
+Debugging deepens your understanding of programming concepts, error handling, and the tools available.
+
+Build Robust Software
+A thorough debugging process ensures the final product is stable, maintainable, and error-free.
+
+
+
+1. File Commands
+file <filename>: Load an executable for debugging.
+core <corefile>: Load a core dump file.
+symbol-file <filename>: Load symbols from the given file.
+add-symbol-file <filename>: Add symbols for dynamically loaded files.
+
+2. Program Execution
+run (r): Start the program from the beginning.
+start: Begin execution and stop at the first line of main.
+continue (c): Resume program execution.
+step (s): Step into the next instruction or function call.
+next (n): Step over the next instruction (do not enter functions).
+finish: Execute until the current function returns.
+until: Continue execution until a specific line or function is reached.
+return: Force a function to return prematurely.
+kill: Stop program execution.
+
+3. Breakpoints, Watchpoints, and Catchpoints
+break (b) <location>: Set a breakpoint at a location (line, function, etc.).
+tbreak <location>: Temporary breakpoint (disabled after hit).
+watch <expression>: Stop execution when an expression is modified.
+rwatch <expression>: Stop execution when an expression is read.
+awatch <expression>: Stop execution when an expression is read or modified.
+delete: Remove breakpoints/watchpoints.
+disable/enable: Disable/enable breakpoints.
+
+4. Threads
+info threads: List all threads.
+thread <id>: Switch to a specific thread.
+thread apply <id>: Apply a command to a specific thread.
+thread apply all: Apply a command to all threads.
+
+5. Stack Manipulation
+backtrace (bt): Show the stack trace.
+frame <n>: Select a specific stack frame.
+up/down: Move up or down the call stack.
+info frame: Detailed information about the current frame.
+
+6. Variables and Memory
+print (p) <expression>: Print the value of an expression.
+set var <expression>: Modify a variable's value.
+x <address>: Examine memory at a given address.
+display: Automatically display an expression after each stop.
+undisplay: Stop displaying an expression.
+
+7. Registers
+info registers: Display general-purpose registers.
+info all-registers: Show all CPU registers.
+set $<register>: Modify the value of a specific register.
+
+8. Signals
+info signals: List signals and their handling status.
+handle <signal>: Configure how GDB handles specific signals.
+
+9. Input/Output
+tty <device>: Redirect program input/output to a specific terminal.
+set logging: Log GDB session to a file.
+show logging: Show current logging settings.
+
+10. Debugging Shared Libraries
+info sharedlibrary: List loaded shared libraries.
+sharedlibrary <name>: Load symbols for a shared library.
+
+11. Miscellaneous Commands
+info: Displays information about various components.
+help <command>: Show help for a specific command.
+quit: Exit GDB.
+
+12. GDB Scripting
+define <name>: Define a custom command.
+commands <breakpoint>: Attach commands to a breakpoint.
+source <filename>: Execute GDB commands from a file.

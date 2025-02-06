@@ -1,0 +1,134 @@
+<-------------STEPS TO INSTALL ARM GCC TOOL------------->
+
+ARM GCC tool chain
+
+https://developer.arm.com/-/media/Files/downloads/gnu-rm/10.3-2021.10/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux.tar.bz2?rev=78196d3461ba4c9089a67b5f33edf82a&hash=5631ACEF1F8F237389F14B41566964EC
+         or
+sudo apt install gcc-arm-none-eabi
+sudo apt install gdb-multiarch
+
+arm-none-eabi-gcc --version
+gdb-multiarch --version
+
+
+Install build dependencies:
+
+sudo apt install -y git build-essential libglib2.0-dev libfdt-dev libpixman-1-dev zlib1g-dev
+
+Clone the QEMU STM32 fork:
+
+git clone https://github.com/beckus/qemu_stm32.git
+cd qemu_stm32
+Configure and build QEMU:
+
+sudo apt install install qemu-system-arm
+
+qemu-system-arm -machine help
+
+<---------------STEPS FOR BUILD AND RUN APPLICATION---------------->
+
+1. Compile the Firmware
+Run the build_firmware.sh script to compile the firmware:
+cd tools/qemu_engine/qemu_stm32
+chmod +x ./build_firmware.sh
+./build_firmware.sh
+After running this command:
+•	stm.elf will be created in tools/qemu_engine/.
+
+
+2. Run QEMU
+Start the QEMU simulation with the compiled firmware:
+chmod +x ./run_qemu.sh
+./run_qemu.sh
+•	QEMU will start, and logs will be written to test/log.txt.
+•	QEMU will listen for GDB connections on port 1234.
+
+
+3.To verify the QEMU output, check test/log.txt:
+python3 verify_log.py
+
+
+4. Clean and Rebuild
+Sometimes, leftover object files can cause issues. Clean up previous builds:
+rm -f ../stm.elf
+Rebuild using the script:
+./build_firmware.sh
+
+5. Stop QEMU:
+After running or debugging, stop QEMU by:
+•	Pressing Ctrl+C in the QEMU terminal.
+•	Or, killing the process:
+
+pkill qemu-system-arm
+
+
+<--------------------STEPS FOR DEBUG WITH GDB---------------------->
+
+1.	Start GDB:
+Open another terminal and start gdb-multiarch:
+gdb-multiarch stm.elf
+2.	Connect to QEMU:
+Inside the GDB prompt:
+gdb
+target remote localhost:1234
+3.	Load and Run:
+->	Load the ELF symbols:
+gdb
+load
+->	Start execution:
+gdb
+continue
+4.	Debugging Commands:
+->	Set breakpoints:
+gdb
+break main
+->	Step through the code:
+gdb
+step
+next
+->	Inspect variables:
+gdb
+print RCC_AHB1ENR
+print GPIOA_ODR
+
+
+<--------------------ANOTHER STEPS FOR DEBUG WITH GDB USING RUN QEMU---------------------->
+
+1.	Start QEMU with GDB Stub: Add -S -gdb tcp::1234 options to run_qemu.sh to enable debugging:
+qemu-system-arm \
+    -M stm32-p103 \
+    -nographic \
+    -kernel ../stm.elf \
+    -S -gdb tcp::1234
+Then, run QEMU:
+./run_qemu.sh
+
+2.	Connect to GDB:
+Open another terminal and connect GDB to QEMU:
+arm-none-eabi-gdb ../stm.elf
+Inside GDB, connect to the QEMU GDB server:
+gdb
+target remote :1234
+
+3.	Debug Commands in GDB:
+->	Set a breakpoint:
+gdb
+break main
+->	Continue execution:
+gdb
+continue
+->	Step through code:
+gdb
+step
+->	Print variables:
+gdb
+print <variable_name>
+->	Quit GDB:
+gdb
+quit
+
+4. Stop QEMU:
+After running or debugging, stop QEMU by:
+•	Pressing Ctrl+C in the QEMU terminal.
+•	Or, killing the process:
+___________________________________________________________________________________________________

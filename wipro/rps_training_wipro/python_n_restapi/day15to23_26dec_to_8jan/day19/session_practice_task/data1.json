@@ -1,0 +1,21 @@
+{
+  "name": "Test game",
+  "version": "1.0",
+  "description": "The test game! ...",
+  "genres": [
+    "Card",
+    "Puzzle"
+  ],
+  "developer": {
+    "name": "GameSnacks developer name",
+    "logo": [
+      {
+        "size": {
+          "width": 512,
+          "height": 512
+        },
+        "src": "images/developer-logo.png"
+      }
+    ]
+  }
+}

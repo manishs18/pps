@@ -1,0 +1,47 @@
+<----------------STEPS FOR ARDUINO SIMULATION SETUP------------------>
+
+https://github.com/arduino/ArduinoCore-avr.git
+
+sudo apt install gcc-avr
+
+sudo apt install gdb-avr
+
+sudo apt install simulavr
+
+sudo apt install avr-libc gcc-avr
+
+avr-g++ -g -Os -mmcu=atmega328p -DF_CPU=16000000UL -I/home/rps/wipro/Embeded_Testing/Day_4/Assignments/Ass_1/ArduinoCore-avr/cores/arduino -I/home/rps/wipro/Embeded_Testing/Day_4/Assignments/Ass_1/ArduinoCore-avr/variants/standard -c /home/rps/wipro/Embeded_Testing/Day_4/Assignments/Ass_1/ArduinoCore-avr/cores/arduino/blink.cpp -o blink.elf
+
+avr-gdb blink.elf
+
+
+<----------------STEPS FOR BUILD AND RUN APPLICATION FOR ARDUINO AVR WITHOUT SCRIPT AUTOMATION------------------>
+
+NOTES:-
+gcc-avr: Compiler for AVR microcontrollers.
+gdb-avr: Debugger for AVR.
+simulavr: Simulator for AVR microcontrollers.
+avr-libc: AVR C library.
+
+1. Build AVR Firmware
+Compile the firmware using gcc-avr:
+avr-gcc -mmcu=atmega328p -DF_CPU=16000000UL -o blink.elf blink.c
+avr-objcopy -O ihex -R .eeprom blink.elf blink.hex
+
+2. Simulate with SimulAVR
+Run the firmware using simulavr:
+simulavr --device atmega328p --clock 16000000 --hex-file blink.hex
+
+3. Debug with GDB
+(1.) Start SimulAVR with GDB:
+simulavr --gdbserver --device atmega328p --clock 16000000 --hex-file blink.hex
+
+(2.) Connect with GDB:
+avr-gdb blink.elf
+target remote localhost:1212
+
+
+<----------------STEPS FOR BUILD AND RUN APPLICATION FOR ARDUINO WITH SCRIPT AUTOMATION------------------>
+cd avr_engine/blink
+./build_avr.sh
+./run_simulavr.sh

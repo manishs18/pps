@@ -1,0 +1,11 @@
+[0;1;32m●[0m mongod.service - MongoDB Database Server
+     Loaded: loaded (/lib/systemd/system/mongod.service; enabled; vendor preset: enabled)
+     Active: [0;1;32mactive (running)[0m since Tue 2025-01-07 03:31:43 IST; 2min 1s ago
+       Docs: https://docs.mongodb.org/manual
+   Main PID: 45942 (mongod)
+     Memory: 69.5M
+     CGroup: /system.slice/mongod.service
+             └─45942 /usr/bin/mongod --config /etc/mongod.conf
+
+Jan 07 03:31:43 bhima-VirtualBox systemd[1]: Started MongoDB Database Server.
+Jan 07 03:31:43 bhima-VirtualBox mongod[45942]: {"t":{"$date":"2025-01-06T22:01:43.943Z"},"s":"I",  "c":"CONTROL",  "id":7484500, "ctx":"-","msg":"Environment variable MONGODB_CONFIG_OVERRIDE_NOFORK == 1, overriding \"processManagement.fork\" to false"}

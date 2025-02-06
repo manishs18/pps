@@ -1,0 +1,98 @@
+Preparing your online GDB session...
+✅  System loaded from cache
+✅  Emulator initialized
+. /mnt/gdb.sh
+GNU gdb (GDB) 11.2
+Copyright (C) 2022 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "i686-buildroot-linux-uclibc".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+Source directories searched: /mnt:$cdir:$cwd
+/mnt/sketch.elf: No such file or directory.
+Remote debugging using /dev/ttyS1
+Ignoring packet error, continuing...
+warning: unrecognized item "timeout" in "qSupported" response
+Ignoring packet error, continuing...
+Remote replied unexpectedly to 'vMustReplyEmpty': timeout
+(gdb) run  
+Starting program:  
+No executable file specified.
+Use the "file" or "exec-file" command.
+(gdb) continue
+The program is not being run.
+(gdb) run
+Starting program:  
+No executable file specified.
+Use the "file" or "exec-file" command.
+(gdb) b setup 
+No symbol table is loaded.  Use the "file" command.
+Make breakpoint pending on future shared library load? (y or [n]) y
+Breakpoint 1 (setup) pending.
+(gdb) b myLoopTask 
+No symbol table is loaded.  Use the "file" command.
+Make breakpoint pending on future shared library load? (y or [n]) y
+Breakpoint 2 (myLoopTask) pending.
+(gdb) b vTaskDelay
+No symbol table is loaded.  Use the "file" command.
+Make breakpoint pending on future shared library load? (y or [n]) y
+Breakpoint 3 (vTaskDelay) pending.
+(gdb) continue
+The program is not being run.
+(gdb) run
+Starting program:  
+No executable file specified.
+Use the "file" or "exec-file" command.
+(gdb) print Task1Handle 
+No symbol table is loaded.  Use the "file" command.
+(gdb) monitor stack
+"monitor" command not supported by this target.
+(gdb) b vApplicationStackOverflowHook
+No symbol table is loaded.  Use the "file" command.
+Make breakpoint pending on future shared library load? (y or [n]) y
+Breakpoint 4 (vApplicationStackOverflowHook) pending.
+(gdb) run
+Starting program:  
+No executable file specified.
+Use the "file" or "exec-file" command.
+(gdb) print xTask
+No symbol table is loaded.  Use the "file" command.
+(gdb) print pcTaskName
+No symbol table is loaded.  Use the "file" command.
+(gdb) backtrace
+No stack.
+(gdb) step
+The program is not being run.
+(gdb) next
+The program is not being run.
+(gdb) quit
+GNU gdb (GDB) 11.2
+Copyright (C) 2022 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "i686-buildroot-linux-uclibc".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+Source directories searched: /mnt:$cdir:$cwd
+Reading symbols from /mnt/sketch.elf...
+Remote debugging using /dev/ttyS1
+warning: multi-threaded target stopped without sending a thread-id, using first non-exited thread
+Remote 'g' packet reply is too long (expected 312 bytes, got 420 bytes): 0004004000000000ffffff3f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+(gdb) 

@@ -1,0 +1,61 @@
+Preparing your online GDB session...
+✅  System loaded from cache
+✅  Emulator initialized
+. /mnt/gdb.sh
+GNU gdb (GDB) 11.2
+Copyright (C) 2022 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "i686-buildroot-linux-uclibc".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+Source directories searched: /mnt:$cdir:$cwd
+/mnt/sketch.elf: No such file or directory.
+Remote debugging using /dev/ttyS1
+Invalid hex digit 111
+(gdb) monitor reset halt
+"monitor" command not supported by this target.
+(gdb) run
+Starting program:  
+No executable file specified.
+Use the "file" or "exec-file" command.
+(gdb) info breakpoints
+No breakpoints or watchpoints.
+(gdb) watch DWR_CYCCNT
+No symbol table is loaded.  Use the "file" command.
+(gdb) continue
+The program is not being run.
+(gdb) info registors
+Undefined info command: "registors".  Try "help info".
+(gdb) break main
+No symbol table is loaded.  Use the "file" command.
+Make breakpoint pending on future shared library load? (y or [n]) y
+Breakpoint 1 (main) pending.
+(gdb) run
+Starting program:  
+No executable file specified.
+Use the "file" or "exec-file" command.
+(gdb) info breakpoints
+Num     Type           Disp Enb Address    What
+1       breakpoint     keep y   <PENDING>  main
+(gdb) watch DWT_CYCCNT
+No symbol table is loaded.  Use the "file" command.
+(gdb) continue
+The program is not being run.
+(gdb) step
+The program is not being run.
+(gdb) info registors
+Undefined info command: "registors".  Try "help info".
+(gdb) info registers
+The program has no registers now.
+(gdb) x/10x $sp
+No registers.
+(gdb) 

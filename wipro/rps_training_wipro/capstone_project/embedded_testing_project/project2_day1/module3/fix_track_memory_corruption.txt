@@ -1,0 +1,42 @@
+Steps to Verify the Fix
+1. Compile the Fixed Code
+Compile the code with debugging symbols:
+gcc -g -o fix_track_memory_corruption fix_track_memory_corruption.c
+
+2. Start GDB
+Launch GDB with the executable:
+gdb ./fix_track_memory_corruption
+
+3. Set Breakpoints
+Set breakpoints to observe execution at key points:
+At the start of safeFunction:
+break safeFunction
+Optionally, at the strncpy call to observe memory:
+break strncpy
+
+4. Run the Program
+Start the program execution:
+run
+
+5. Inspect the Memory
+After the strncpy call, check if the memory for buffer contains the expected data without overflow:
+x/20x &buffer
+This will show 20 bytes starting from the address of buffer. Ensure only 9 characters of largeInput and a null terminator are present in buffer.
+
+6. Step Through Execution
+Step forward through the function:
+next
+
+7. Verify Null Termination
+Print the buffer content to confirm null termination:
+print buffer
+Ensure the string is properly null-terminated (no memory corruption or garbage beyond the content).
+
+8. Inspect Adjacent Memory
+Check memory around the buffer to ensure no corruption occurs:
+x/40x &buffer - 10
+Look for unexpected changes in memory adjacent to buffer.
+
+9. Continue and Check Output
+Resume execution to observe the program output:
+continue

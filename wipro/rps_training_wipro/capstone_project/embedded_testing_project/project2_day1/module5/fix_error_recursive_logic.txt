@@ -1,0 +1,35 @@
+Steps to Verify if Recursion is Fixed in GDB
+
+1. Compile the Fixed Code
+First, compile the fixed code with debugging symbols:
+gcc -g -o fix_error_recursive_logic fix_error_recursive_logic.c
+
+2. Start GDB
+Start GDB to debug the program:
+gdb ./fix_error_recursive_logic
+
+3. Set a Breakpoint
+Set a breakpoint at the beginning of the fixedRecursion function to monitor the recursive calls:
+break fixedRecursion
+
+4. Run the Program
+Run the program inside GDB:
+run
+This will start the recursion from fixedRecursion(1).
+
+5. Step Through the Program
+As the program runs, step through each recursive call using next to observe how the recursion behaves:
+next
+Check the value of n in each step to ensure that the function is eventually reaching the base case when n exceeds 10:
+print n
+
+6. Verify the Base Case
+Ensure that after n exceeds 10, the function correctly exits without making further recursive calls. When the base case is hit (n > 10), the recursion should terminate, and you should see that the program does not recurse further.
+
+7. Inspect the Stack
+If needed, you can inspect the call stack to see the state of the recursive calls. This will show if there are any remaining calls on the stack:
+backtrace
+
+8. Finish the Program
+Once the program reaches the base case and finishes without any further recursion, you can finish the program:
+quit

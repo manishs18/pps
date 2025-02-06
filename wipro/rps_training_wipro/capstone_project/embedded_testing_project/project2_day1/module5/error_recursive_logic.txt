@@ -1,0 +1,33 @@
+Steps to Debug the Recursive Error in GDB
+
+1. Compile the Code
+First, compile the program with debugging symbols:
+gcc -g -o error_recursive_logic error_recursive_logic.c
+
+2. Start GDB
+Start GDB to begin debugging the recursion:
+gdb ./error_recursive_logic
+
+3. Enable Reverse Debugging
+To enable reverse debugging, start recording the execution:
+record
+
+4. Run the Program
+Run the program in GDB:
+run
+At this point, the program will recurse indefinitely, eventually causing a stack overflow.
+
+5. Step Through the Program
+As the recursion proceeds, step through the program using next to observe the function calls and check the value of n:
+next
+print n
+This allows you to track the recursion depth as n increases.
+
+6. Reverse Step to Identify the Bug
+Once the stack overflow occurs, use reverse-step to trace the program execution backward:
+reverse-step
+By stepping backward, you'll notice that the recursion continues indefinitely because the base case is missing. The function faultyRecursion(n + 1) keeps calling itself without ever terminating.
+
+7. Inspect the Stack
+Check the current function call stack to see the recursive calls:
+backtrace

@@ -1,0 +1,14 @@
+<company>
+    <Employee>
+        <id>001</id>
+        <name>Prakhar</name>
+        <department>SDE</department>
+        <address>Noida</address>
+    </Employee>
+    <Employee>
+        <id>002</id>
+        <name>Akash</name>
+        <department>HR</department>
+        <address>Delhi</address>
+    </Employee>
+</company>

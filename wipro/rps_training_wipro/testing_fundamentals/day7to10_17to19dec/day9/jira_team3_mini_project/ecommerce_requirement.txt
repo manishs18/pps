@@ -1,0 +1,7 @@
+E-Commerce Website Functional Testing 
+Objective: To validate the functional requirements of an e-commerce website's checkout process.
+1. Tasks: Review the requirement documentation for the checkout process. 
+2. Write test cases for a complete checkout flow, including adding items to the cart, applying discounts, and processing payment. 
+3. Perform a smoke test on the key features of the checkout process. 
+4. Log test results and report any defects found using a tool like JIRA. 
+5. Tag the reported issues appropriately and assign them to the developer role in JIRA

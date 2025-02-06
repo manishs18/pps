@@ -1,0 +1,61 @@
+Regular expressions for dynamic elements 
+
+using multiple attributes 
+
+//button[@class = 'oxd-button oxd-button--medium oxd-button--main orangehrm-login-button' and @type = 'submit']
+
+//button[@class = 'oxd-button oxd-button--medium oxd-button--main orangehrm-login-button' or  @type = 'submit']
+
+indexing concept can also be used for handling dynamic elements 
+
+https://the-internet.herokuapp.com/tables
+
+//span[@id='username_001']
+//span[@id='username_003']
+//span[@id='username_004']
+//span[@id='username_009']
+//span[@id='username_011']
+
+
+//span[@id='01_username']
+
+//span[@id='02_username']
+
+//span[@id='03_username']
+
+//span[@id='04_username']
+
+
+contains text
+starts-with
+ends-with
+
+//span[starts-with(@id,'username_')]  
+
+//span[contains(text(),'username_')]
+
+//span[ends-with(text(), '_username')]
+
+//button[start-with(text(),'login')]
+
+
+tr - rows
+td - columns
+//table[@id = 'table1']/thead
+//table[@id = 'table1']/thead/tr
+//table[@id = 'table1']/thead/tr/th
+
+//table[@id = 'table1']/thead/tr/th[5]
+//table[@id = 'table1']/tbody/tr
+//table[@id = 'table1']/tbody/tr[3]/td
+//table[@id = 'table1']/tbody/tr[4]/td[3]
+
+
+
+//table//tbody//tr/td
+//table//tbody//tr[2]/td[2]
+//table//tbody//tr[3]/td[2]
+//table//tbody//tr[4]/td[2]
+ 
+//table//tbody//tr[5]/td[2]
+//table//tbody//tr[6]/td[2]

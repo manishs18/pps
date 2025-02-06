@@ -1,0 +1,114 @@
+; Sample Lauterbach TRACE32 Script for ARM Cortex-M Debugging
+
+; Step 1: Reset and initialize the system
+SYStem.RESeT                ; Reset the target system
+SYStem.POWER ON             ; Power on the system
+
+; Step 2: Configure the CPU and debug mode
+SYStem.CPU CortexM3         ; Specify the CPU type (adjust as needed)
+SYStem.Mode Debug           ; Set the system mode to Debug
+
+; Step 3: Establish connection with the target
+SYStem.UP                   ; Initialize the connection to the target
+
+; Step 4: Load the program to be debugged
+; Replace "program.elf" with the actual path to your ELF file
+Data.LOAD.Elf "program.elf" /NoCODE /NoDATA
+Program.RESet               ; Reset the program in TRACE32
+Program.LOAD                ; Load the code and data into memory
+
+; Step 5: Set breakpoints and debug settings
+Break.Set 0x08001000        ; Set a breakpoint at address 0x08001000 (adjust as needed)
+Break.List                  ; List all breakpoints
+
+; Step 6: Start the debugging session
+Go                          ; Start program execution
+
+; Step 7: Display debugging information
+; Inspect CPU registers and memory
+CPU.List                    ; Display CPU registers
+Data.List 0x20000000--0x20001000 ; Display memory from 0x20000000 to 0x20001000
+
+; Display the stack trace
+Stack.List                  ; Display the current call stack
+
+; Step 8: Perform variable inspection
+Var.View "main"             ; View variables in the main function
+Var.View "my_variable"      ; Display the value of a specific variable
+
+; Step 9: Stop and resume execution
+Stop                        ; Stop execution at the breakpoint
+Go                          ; Resume execution
+
+; Step 10: Save results (optional)
+Data.SAVE.Binary 0x20000000 0x20001000 "memory_dump.bin" ; Save memory content to a file
+
+; End of script
+
+to test the debug_script:-
+
+DO debug_script.cmm
+
+
+
+<-----------------STEPS TO TEST TRACE32 APPLICATION--------------->
+
+
+1. Install TRACE32 PowerView Software
+Obtain the TRACE32 software from the Lauterbach website.
+Install it on your PC following the installation guide provided by Lauterbach.
+
+2. Prepare Your Debug Environment
+Connect Hardware:
+Connect the TRACE32 debugger to your target hardware via the debugging interface (e.g., JTAG or SWD).
+Connect TRACE32 to your PC via USB or Ethernet.
+Power Up the Target:
+Ensure the target hardware is powered on and connected.
+
+3. Load the Debug Configuration
+Get the Configuration Script (.cmm):
+This script contains the setup instructions for TRACE32 to configure the debugging environment.
+Launch TRACE32 PowerView:
+Open the TRACE32 application on your PC.
+Load the .cmm Script:
+Run the script using the do command:
+do <path-to-script>/<script-name>.cmm
+
+4. Establish Connection to the Target
+Use the following commands to initialize and connect:
+sys.up
+sys.view
+Check for connection issues and resolve them if necessary.
+
+5. Perform Debugging Tasks
+Load the Target Code:
+Data.LOAD.Elf <path-to-firmware>.elf
+Control the Target Execution:
+Start execution: Go
+Halt execution: Break
+Reset the target: Reset
+Set and Manage Breakpoints:
+Break.Set <function-or-address>
+Break.List
+Inspect Code, Registers, and Memory:
+Win.src      ; View source code
+Register.view ; View registers
+Data.dump <start> <end> ; View memory
+
+6. Verify and Document Results
+Test different scenarios using TRACE32.
+Document the process and results for analysis.
+
+
+
+Script Highlights:
+SYStem.RESeT & SYStem.POWER ON: Resets and powers on the debug target.
+SYStem.CPU: Specifies the CPU type (e.g., CortexM3, CortexM4, etc.).
+Data.LOAD.Elf: Loads the ELF file into TRACE32 for debugging.
+Break.Set: Sets a breakpoint at a specific memory address.
+Go and Stop: Starts and stops the program execution.
+Inspection Commands:
+CPU.List: Displays CPU register states.
+Data.List: Inspects memory regions.
+Var.View: Inspects specific variables or function variables.
+Memory Save: Dumps memory content to a file for analysis.

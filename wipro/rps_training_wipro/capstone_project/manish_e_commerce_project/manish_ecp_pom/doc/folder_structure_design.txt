@@ -1,0 +1,24 @@
+ecommerce_automation/
+├── pages/
+│   ├── base_page.py
+│   ├── home_page.py
+│   ├── login_page.py
+│   ├── signup_page.py
+│   ├── cart_page.py
+│   └── product_page.py
+├── tests/
+│   ├── conftest.py
+│   ├── test_login.py
+│   ├── test_signup.py
+│   ├── test_cart.py
+│   └── test_product.py
+├── utils/
+│   ├── config.py
+│   ├── driver_factory.py
+│   └── logger.py
+├── test_data/
+│   └── test_data.xlsx
+├── logs/
+│   └── test.log
+├── requirements.txt
+└── README.md

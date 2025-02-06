@@ -1,0 +1,117 @@
+pytest --maxfail=1 --disable-warnings -v
+to show passed or failed
+
+
+Here’s a quick pytest cheat sheet to help you prepare for your viva:
+
+1. Basic Pytest Commands
+Run tests:
+pytest
+Run a specific test file:
+pytest test_file.py
+Run a specific test function:
+pytest test_file.py::test_function
+Run tests with a specific marker:
+pytest -m marker_name
+
+2. Assertions
+Basic assertion:
+assert x == 5  # checks if x is equal to 5
+assert y in list  # checks if y is in the list
+Check if exception is raised:
+with pytest.raises(Exception):
+    function_that_raises_exception()
+
+3. Markers
+Basic Markers:
+@pytest.mark.smoke
+@pytest.mark.regression
+@pytest.mark.sanity
+Skip a test:
+@pytest.mark.skip(reason="Feature not implemented")
+def test_skip():
+    pass
+Conditionally skip:
+@pytest.mark.skipif(condition, reason="Condition not met")
+def test_skipif():
+    pass
+
+4. Fixtures
+Define a Fixture:
+@pytest.fixture
+def sample_fixture():
+    return "sample data"
+Use Fixtures in Tests:
+def test_example(sample_fixture):
+    assert sample_fixture == "sample data"
+
+Fixture with setup and teardown:
+@pytest.fixture(scope="function")
+def setup_and_teardown():
+    setup_code()  # Setup before test
+    yield
+    teardown_code()  # Teardown after test
+
+Fixture with scope (function, class, module, session):
+@pytest.fixture(scope="module")
+def setup_module():
+    # Setup code
+
+5. Parametrize
+Parametrize a test function:
+@pytest.mark.parametrize("input, expected", [(1, 2), (3, 4)])
+def test_param(input, expected):
+    assert input + 1 == expected
+
+6. Command-line Options
+Run tests with increased verbosity:
+pytest -v
+
+Generate a report (HTML):
+pytest --html=report.html
+Disable warnings:
+pytest -p no:warnings
+
+7. Parallel Execution with pytest-xdist
+Run tests in parallel:
+pytest -n <num_cores>  # Example: pytest -n 4
+
+8. Logging and Output
+Capture logs in pytest:
+import logging
+
+def test_logging():
+    logger = logging.getLogger("test_logger")
+    logger.warning("This is a warning")
+Show print statements during test execution:
+pytest -s
+
+9. Test Reports
+Generate a JUnit XML report:
+pytest --junitxml=report.xml
+
+10. Test Failures and Retries
+Retry failed tests using pytest-rerunfailures plugin:
+pytest --reruns 3
+
+11. Pytest Configuration (pytest.ini)
+Example pytest.ini file to configure pytest settings:
+[pytest]
+markers =
+    smoke: mark test as smoke test
+    regression: mark test as regression test
+
+12. Customizing Pytest Output
+Display only failed tests:
+pytest -q --tb=short
+
+13. Test Coverage with pytest-cov
+Run tests with coverage:
+pytest --cov=your_module tests/
+
+Basic pytest: Use pytest to run tests. It will automatically discover tests starting with test_.
+Fixtures: Use for setup and teardown operations.
+Parametrize: Run a single test function with multiple input values.
+Markers: Mark tests for different categories like smoke, regression, sanity.
+Command-Line Options: Use options like -v, --html, -n for verbosity, reports, and parallel execution.
+Test Assertions: Use assert to verify the test outcomes.

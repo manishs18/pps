@@ -1,0 +1,35 @@
+GDB Commands
+Compile the Code with Debugging Symbols:
+gcc -g -o track_memory_corruption track_memory_corruption.c
+
+Start GDB:
+gdb ./track_memory_corruption
+
+Set a Breakpoint at vulnerableFunction:
+break vulnerableFunction
+
+Run the Program:
+run
+
+Step into the Function:
+step
+
+Start Recording Execution:
+record
+
+Step Through Execution: Observe the strcpy operation:
+next
+
+Inspect the Buffer After Write: Check the memory where buffer resides:
+x/20x &buffer
+This command shows the first 20 bytes starting from buffer.
+
+Reverse Execution to Find Corruption: Use reverse execution to backtrack and find the overflow:
+reverse-next
+reverse-step
+Observe the Problem:
+
+Use x/20x &buffer after each reverse step to observe changes in memory.
+Check if buffer contains more data than its allocated size.
+Inspect the Stack Frame: To confirm corruption of the return address or adjacent memory:
+info frame

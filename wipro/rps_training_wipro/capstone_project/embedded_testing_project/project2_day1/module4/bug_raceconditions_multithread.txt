@@ -1,0 +1,45 @@
+Steps to Debug Race Condition
+
+1. Compile the Code
+Compile the code with debugging symbols and thread support:
+gcc -g -pthread -o bug_raceconditions_multithread bug_raceconditions_multithread.c
+
+2. Start GDB
+Run the program inside GDB:
+gdb ./bug_raceconditions_multithread
+
+3. Set Breakpoints
+Set breakpoints inside the increment and decrement functions:
+break increment
+break decrement
+
+4. Run the Program
+Run the program in GDB:
+run
+
+5. Enable Reverse Debugging
+Start recording program execution for reverse debugging:
+record
+
+6. Step Through Execution
+Use next to step through the program and observe changes to the shared variable:
+next
+print shared_counter
+
+7. Reverse Execution
+Use reverse stepping to analyze simultaneous access to the shared variable:
+reverse-next
+reverse-step
+
+8. Inspect Thread Execution
+Inspect the running threads to check which thread is modifying shared_counter:
+info threads
+Switch to a specific thread to inspect its state:
+
+thread <thread-number>
+9. Observe the Bug
+Keep stepping forward and backward to identify where multiple threads are accessing shared_counter simultaneously, causing inconsistent updates.
+
+10. Stop Recording
+Once you identify the race condition, stop recording:
+delete record

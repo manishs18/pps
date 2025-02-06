@@ -1,0 +1,44 @@
+Steps to Verify if the Bug is Fixed
+
+1. Compile the Fixed Code
+First, compile the fixed code with debugging symbols and thread support:
+gcc -g -pthread -o fix_bug_raceconditions_multithread fix_bug_raceconditions_multithread.c
+
+2. Start GDB
+Start the GDB debugger to check if the issue has been fixed:
+gdb ./fix_bug_raceconditions_multithread
+
+3. Set Breakpoints
+Set breakpoints at the start of the increment and decrement functions to monitor thread activity:
+break increment
+break decrement
+
+4. Run the Program
+Run the program inside GDB:
+run
+
+5. Enable Reverse Debugging
+Start recording for reverse debugging:
+record
+
+6. Step Through the Code
+Step through the program using next and observe the shared variable (shared_counter) as the threads increment and decrement it:
+next
+print shared_counter
+Verify that shared_counter is correctly updated without any inconsistent results. The mutex should ensure thread safety.
+
+7. Check Thread Synchronization
+Inspect thread execution using info threads. This will allow you to see if the threads are correctly synchronized when accessing shared_counter:
+info threads
+Switch between threads to observe their state:
+thread <thread-number>
+
+8. Reverse-Step Through Execution
+If needed, use reverse stepping to observe the synchronization effect on shared_counter:
+reverse-next
+reverse-step
+Ensure that there is no overlapping thread access to shared_counter while stepping through the program.
+
+9. Stop Recording
+Once you have verified that the mutex is correctly working and no race condition occurs, stop recording:
+delete record

@@ -1,0 +1,148 @@
+
+
+Here’s a step-by-step guide and a script to set up MongoDB and enable CRUD operations using Python.
+
+---
+
+### **Step 1: Install MongoDB**
+
+1. **For Linux (Ubuntu-based systems):**
+   ```bash
+   # Import the public key for the MongoDB repository
+   wget -qO - https://www.mongodb.org/static/pgp/server-6.0.asc | sudo apt-key add -
+
+   # Create a source list for MongoDB
+   echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/6.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-6.0.list
+
+   # Update the package database
+   sudo apt-get update
+
+   # Install MongoDB
+   sudo apt-get install -y mongodb-org
+
+   # Start MongoDB service
+   sudo systemctl start mongod
+
+   # Enable MongoDB to start on system boot
+   sudo systemctl enable mongod
+   ```
+
+2. **For macOS (using Homebrew):**
+   ```bash
+   # Update Homebrew
+   brew update
+
+   # Install MongoDB
+   brew tap mongodb/brew
+   brew install mongodb-community@6.0
+
+   # Start MongoDB service
+   brew services start mongodb/brew/mongodb-community
+   ```
+
+3. **For Windows:**
+   - Download the [MongoDB installer](https://www.mongodb.com/try/download/community) for Windows.
+   - Run the installer and follow the steps to install MongoDB.
+   - Configure MongoDB as a Windows service during installation.
+
+---
+
+### **Step 2: Install Python and Required Packages**
+
+1. Install Python:
+   - Verify installation: `python3 --version` (Linux/Mac) or `python --version` (Windows).
+
+2. Install the `pymongo` library for Python:
+   ```bash
+   pip install pymongo
+   ```
+
+3. Verify the installation:
+   ```bash
+   python -c "import pymongo; print('pymongo version:', pymongo.__version__)"
+   ```
+
+---
+
+### **Step 3: Write a Python Script for CRUD Operations**
+
+Here's a sample Python script (`crud_mongodb.py`) to perform CRUD operations:
+
+```python
+from pymongo import MongoClient
+
+# Connect to MongoDB
+client = MongoClient("mongodb://localhost:27017/")  # Replace with your MongoDB connection string if needed
+db = client["mydatabase"]
+collection = db["mycollection"]
+
+# CREATE
+def create_document(data):
+    result = collection.insert_one(data)
+    print("Inserted document with ID:", result.inserted_id)
+
+# READ
+def read_documents():
+    documents = collection.find()
+    for doc in documents:
+        print(doc)
+
+# UPDATE
+def update_document(filter_query, update_query):
+    result = collection.update_one(filter_query, {"$set": update_query})
+    print("Matched:", result.matched_count, "Modified:", result.modified_count)
+
+# DELETE
+def delete_document(filter_query):
+    result = collection.delete_one(filter_query)
+    print("Deleted documents:", result.deleted_count)
+
+# Example usage
+if __name__ == "__main__":
+    # Create
+    create_document({"name": "John", "age": 30, "city": "New York"})
+    
+    # Read
+    print("Documents in collection:")
+    read_documents()
+    
+    # Update
+    update_document({"name": "John"}, {"age": 31})
+    
+    # Delete
+    delete_document({"name": "John"})
+```
+
+---
+
+### **Step 4: Run the Python Script**
+
+1. Ensure MongoDB is running:
+   ```bash
+   sudo systemctl status mongod  # Linux
+   brew services list            # macOS
+   ```
+
+2. Execute the Python script:
+   ```bash
+   python crud_mongodb.py
+   ```
+
+---
+
+### **Step 5: Verify MongoDB Operations**
+
+1. Use the MongoDB shell to verify data:
+   ```bash
+   mongosh
+   ```
+2. Switch to your database:
+   ```javascript
+   use mydatabase
+   ```
+3. List documents:
+   ```javascript
+   db.mycollection.find()
+   ```
+
+This setup and script should allow you to perform CRUD operations on MongoDB with Python seamlessly. Let me know if you need further assistance!
