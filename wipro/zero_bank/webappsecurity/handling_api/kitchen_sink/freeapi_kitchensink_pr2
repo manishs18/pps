@@ -1,0 +1,51 @@
+import requests
+import json
+
+def get_kitchensink_pr2():
+    user_data_payload = {"name": "Manish", "job": "SDE"}
+    url = "https://api.freeapi.app/api/v1/kitchen-sink/http-methods/post"
+    response = requests.post(url, data=user_data_payload)
+    data = response.json()
+    print(data)
+
+    if data["success"] and "data" in data:
+        kitchensink_data = data["data"]
+        method = kitchensink_data["method"]
+        user_data = kitchensink_data["name", "job"]
+        return method, user_data
+    else:
+        raise Exception("Failed to fetch kitchensink data")
+    
+def main():
+    try:
+        method, user_data = get_kitchensink_pr2()
+        print(f"Method: {method} \n User Name: {user_data}")
+    except Exception as e:
+        print(str(e))
+
+if __name__ == "__main__":
+    main()
+
+'''
+url = 'http://api.freeapi.app/api/v1/kitchen-sink/http-methods/post'
+headers = {
+    'Content-Type': 'application/json',
+    'Accept': 'application/json'
+}
+data = {
+    'message': 'POST request'
+}
+
+# Make the POST request
+response = requests.post(url, headers=headers, data=json.dumps(data))
+
+# Check if the response status code indicates success
+if response.status_code == 200:
+    try:
+        # Try to parse the response as JSON
+        print("Success:", response.json())
+    except requests.exceptions.JSONDecodeError:
+        print("Response is not in JSON format. Raw response:", response.text)
+else:
+    print(f"Request failed with status code: {response.status_code}")
+'''

@@ -1,6 +1,6 @@
 import requests
 
-def fetch_randomusers_user_random():
+def fetch_randomUsers_getUsersRandom():
     url = "https://api.freeapi.app/api/v1/public/randomusers/user/random"
     respone = requests.get(url)
     print(respone)
@@ -13,11 +13,10 @@ def fetch_randomusers_user_random():
         return username, country
     else:
         raise Exception("Failed to fetch user data")
-    
 
 def main():
     try:
-        username, country  = fetch_randomusers_user_random()
+        username, country  = fetch_randomUsers_getUsersRandom()
         print(f"Username: {username} \n Country: {country}")
     except Exception as e:
         print(str(e))
